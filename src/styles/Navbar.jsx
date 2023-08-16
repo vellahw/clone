@@ -1,19 +1,21 @@
 import styled from 'styled-components';
 
 export const Navigation = styled.nav`
-  max-width: 1024px;
-  margin: 0 auto;
-  height: 64px;
-  background-color: #fff;
+    width: 100%;
+    height: 64px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
 `
 
 export const NavigationWrap = styled.div`
   max-width: 1024px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
-  position: fixed;
 
   .header-logo {
     width: 80px;

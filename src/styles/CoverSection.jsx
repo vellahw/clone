@@ -1,20 +1,26 @@
 import styled from 'styled-components';
 
 export const CoverSection = styled.section`
-  /* position: absolute; */
-  top: 0;
+  position: relative;
+  /* top: 0; */
 
   .cover-img {
     width: 100%;
-    height: 852px;
+    height: 100vh;
     object-fit: cover;
-    /* position: relative; */
   }
+`
+
+export const HeaderContainer = styled.div`
+  max-width: 1024px;
+  margin: 0 auto;
 `
 
 export const CoverHeaderDiv = styled.div`
   color: #fff;
   position: absolute;
+  top: 35%;
+  z-index: 999;
 `
 
 export const CoverHeader = styled.h1`
@@ -42,4 +48,10 @@ export const CoverButton = styled.button`
   width: 146px;
   height: 48px;
   margin-top: 28px;
+`
+
+export const CoverImgContainer = styled.div`
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
 `

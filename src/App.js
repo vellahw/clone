@@ -1,7 +1,8 @@
 import './App.css';
-import styled from "styled-components";
 import headerLogo from './image/ziktu-logo.png';
 import cover1 from './image/cover1.jpg';
+import cover2 from './image/cover2.jpg';
+import cover3 from './image/cover3.jpg';
 import logoPartner1 from './image/logo-partner1.png';
 import logoPartner2 from './image/logo-partner2.png';
 import banner from './image/banner.jpg';
@@ -20,7 +21,8 @@ import * as b from './styles/BannerSection';
 import * as c from './styles/CoverSection';
 import * as ns from './styles/NewsSection';
 import * as fo from './styles/Footer';
-// import carousel from 'react-responsive-carousel';
+import {Carousel} from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
       {/* 네비게이션 바 영역 */}
       <n.Navigation>
         <n.NavigationWrap>
-          <a href='http://localhost:3000/'>
+          <a href='http://localhost:3000/' rel="noreferrer">
             <img src={headerLogo} className='header-logo' alt='로고 이미지'></img>
           </a>
           <n.CategoryDiv>
@@ -49,6 +51,7 @@ function App() {
 
       {/* 커버 이미지 영역 */}
       <c.CoverSection>
+        <c.HeaderContainer>
         <c.CoverHeaderDiv>
           <c.CoverHeader>압구정 커머스빌딩</c.CoverHeader>
           <c.CoverHeaderTextDiv>
@@ -61,7 +64,23 @@ function App() {
           </c.CoverHeaderTextDiv>
           <c.CoverButton>지금 시작하기</c.CoverButton>
         </c.CoverHeaderDiv>
-        <img src={cover1} className='cover-img' alt='커버 이미지'></img>
+        </c.HeaderContainer>
+
+        <Carousel
+          showArrows={false}
+          centerMode={false}
+          showThumbs={false}
+          showStatus={false}
+          showIndicators={false}
+          autoPlay={true}
+          infiniteLoop={true}
+          transitionTime={1000}
+        >
+          <img src={cover1} className='cover-img' alt='커버 이미지'></img>
+          <img src={cover2} className='cover-img' alt='커버 이미지'></img>
+          <img src={cover3} className='cover-img' alt='커버 이미지'></img>
+        </Carousel>
+
       </c.CoverSection>
 
       {/* 회사 소개 영역 */}
@@ -213,7 +232,7 @@ function App() {
           </i.HelpText>
           <i.ButtonDiv>
             <i.HelpButton>문의하기</i.HelpButton>
-            <a href='https://static.kr.kasa.exchange/corp/%EB%B2%95%EC%9D%B8%EC%83%81%ED%92%88%EC%84%A4%EB%AA%85%EC%84%9C.pdf' target="_blank">
+            <a href='https://static.kr.kasa.exchange/corp/%EB%B2%95%EC%9D%B8%EC%83%81%ED%92%88%EC%84%A4%EB%AA%85%EC%84%9C.pdf' target="_blank" rel="noreferrer">
               <i.DownloadFileText>법인 상품설명서 다운로드</i.DownloadFileText>
             </a>
           </i.ButtonDiv>
@@ -244,28 +263,28 @@ function App() {
           </fo.AddressDiv>
 
           <fo.SocialLogoDiv>
-            <a href='https://www.facebook.com/bitstoa/' target='_blank'>
+            <a href='https://www.facebook.com/bitstoa/' target='_blank' rel="noreferrer">
               <BsFacebook className='sns-logo' />
             </a>
-            <a href='https://t.me/bitstoa_com' target='_blank'>
+            <a href='https://t.me/bitstoa_com' target='_blank' rel="noreferrer">
               <BsTelegram className='sns-logo'  />
             </a>
-            <a href='https://www.youtube.com/channel/UCQEnD0zSF3ui9Tle_EwRMBQ/about' target='_blank'>
+            <a href='https://www.youtube.com/channel/UCQEnD0zSF3ui9Tle_EwRMBQ/about' target='_blank' rel="noreferrer">
               <BsYoutube className='sns-logo' />
             </a>
-            <a href='https://blog.naver.com/hackersholdings' target='_blank'>
-              <img src={blog} className='sns-logo'></img>
+            <a href='https://blog.naver.com/hackersholdings' target='_blank' rel="noreferrer">
+              <img src={blog} className='sns-logo' alt='네이버 블로그 로고'></img>
             </a>
           </fo.SocialLogoDiv>
 
           <fo.ArticleDiv>
-            <a href='http://hackers.iwinv.net/privacy_policy.html' target="_blank">
+            <a href='http://hackers.iwinv.net/privacy_policy.html' target="_blank" rel="noreferrer">
               개인정보 처리방침
             </a>
           </fo.ArticleDiv>
           
           <fo.ArticleDiv>
-             <a href='https://static.kr.kasa.exchange/terms/service.html' target="_blank">
+             <a href='https://static.kr.kasa.exchange/terms/service.html' target="_blank" rel="noreferrer">
               서비스이용약관
             </a>
           </fo.ArticleDiv>
@@ -290,7 +309,7 @@ function App() {
             
             <fo.LogoContainer>
               <fo.LogoDiv>
-                <img src={iso} className='footer-logo'></img>
+                <img src={iso} className='footer-logo' alt='iso 로고'></img>
                 <fo.ArticleText>
                   정보보안 국제표준<br/>
                   ISO 27001 인증 획득
@@ -298,7 +317,7 @@ function App() {
               </fo.LogoDiv>
               <fo.LastLine></fo.LastLine>
               <fo.LogoDiv>
-                <img src={sw} className='footer-logo'></img>
+                <img src={sw} className='footer-logo' alt='sw 로고'></img>
                 <fo.ArticleText>
                   개인정보보호배상책임공제<br/>
                   가입 인증
@@ -306,7 +325,7 @@ function App() {
                 <fo.LastLine></fo.LastLine>
               </fo.LogoDiv>
               <fo.LogoDiv>
-                <img src={isms} className='footer-logo'></img>
+                <img src={isms} className='footer-logo' alt='isms 로고'></img>
                 <fo.ArticleText>
                   [인증범위] 직투 서비스 운영<br/>
                   [유효기간] 2022.11.16 ~ 2025.11.15
@@ -321,6 +340,3 @@ function App() {
 }
 
 export default App;
-
-const Wrapper =  styled.div`
-`
