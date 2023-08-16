@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {CoverButton} from './CoverSection';
+
 
 export const InfoSection = styled.section`
   max-width: 1024px;
@@ -29,7 +31,7 @@ export const InfoCardDiv = styled.div`
 `
 
 export const InfoCard = styled.div`
-  background-color: #F3F4F5;
+  background-color: #F6F6F9;
   width: 378px;
   height: 222px;
   padding: 47px;
@@ -62,4 +64,28 @@ export const InfoCardTitle = styled(InfoTitle)`
 export const InfoCardText = styled(InfoHeaderText)`
   font-size: 22px;
   line-height: 40px;
+`
+
+export const HelpText = styled(InfoHeaderText)`
+  font-size: 22px;
+  line-height: 36px;
+`
+
+export const HelpButton = styled(CoverButton)`
+  width: 107px;
+  margin-top: 0;
+  margin-right: 30px;
+`
+export const DownloadFileText = styled.p`
+  color: #A1A0A8;
+  text-decoration: underline;
+  font-weight: 600;
+  margin: 0;
+  cursor: pointer;
+`
+
+export const ButtonDiv = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
 `

@@ -1,5 +1,9 @@
 import styled from 'styled-components';
-import {InfoCardDiv, InfoCard, InfoCardR, InfoCardText} from './InfoSection';
+import {InfoSection, InfoCardDiv, InfoCard, InfoCardR, InfoCardText} from './InfoSection';
+
+export const FlatformSection = styled(InfoSection)`
+    height: 1160px;
+`
 
 export const FlatformInfoCardDiv = styled(InfoCardDiv)`
     margin-top: 20px;
@@ -16,6 +20,7 @@ export const FlatformInfoCard = styled(InfoCard)`
 
 export const FlatformInfoCardText = styled(InfoCardText)`
     line-height: 34px;
+    word-break: keep-all;
 ` 
 export const FlatformInfoCardB = styled(InfoCardR)`
     background-color: #627AF5;
@@ -27,7 +32,7 @@ export const FlatformInfoCardB = styled(InfoCardR)`
 `
 
 export const FlatformInfoCardBR = styled(InfoCardR)`
-    background-color: #2A2C34;
+    background-color: #414551;
     border-radius: 15px;
     width: 522px;
     height: 206px;

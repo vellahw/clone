@@ -10,3 +10,17 @@ body {
 ul li {
   list-style: none;
 }
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #414551;
+}
+
+address {
+  text-decoration: none;
+  font-style: normal;
+}

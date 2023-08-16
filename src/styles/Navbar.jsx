@@ -4,7 +4,7 @@ export const Navigation = styled.nav`
   max-width: 1024px;
   margin: 0 auto;
   height: 64px;
-
+  background-color: #fff;
 `
 
 export const NavigationWrap = styled.div`
