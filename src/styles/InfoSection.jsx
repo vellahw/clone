@@ -6,6 +6,10 @@ export const InfoSection = styled.section`
   max-width: 1024px;
   margin: 0 auto;
   padding: 76px;
+  
+  @media (max-width: 767px) {
+    padding: 40px;
+  }
 `
 
 export const InfoTitle = styled.p`
@@ -28,6 +32,9 @@ export const InfoCardDiv = styled.div`
   padding: 28px 0 0 80px;
   display: flex;
   position: relative;
+
+  @media (max-width:767px) {
+  }
 `
 
 export const InfoCard = styled.div`
@@ -42,6 +49,10 @@ export const InfoCard = styled.div`
     float: right;
     margin-top: 24px;
   }
+
+  @media(max-width:767px){
+
+  }
 `
 
 export const InfoCardR = styled(InfoCard)`
@@ -53,6 +64,11 @@ export const InfoCardR = styled(InfoCard)`
 
   .partner-logo {
     width: 244px;
+  }
+
+  @media(max-width:767px){
+    top: 0;
+    left: 0;
   }
 `
 

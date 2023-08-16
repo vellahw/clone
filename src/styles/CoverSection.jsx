@@ -1,13 +1,28 @@
 import styled from 'styled-components';
 
 export const CoverSection = styled.section`
-  position: relative;
-  /* top: 0; */
 
-  .cover-img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  @media (max-width: 1024px) {
+    position: relative;
+    /* top: 0; */
+    margin: 0 auto;
+
+    /* .cover-img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    } */
+  }
+
+  @media (max-width:767px) {
+    position: relative;
+    margin: 0 auto;
+
+    /* .cover-img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    } */
   }
 `
 
@@ -20,7 +35,7 @@ export const CoverHeaderDiv = styled.div`
   color: #fff;
   position: absolute;
   top: 35%;
-  z-index: 999;
+  z-index: 1;
 `
 
 export const CoverHeader = styled.h1`

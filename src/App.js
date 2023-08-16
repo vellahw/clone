@@ -1,4 +1,3 @@
-import './App.css';
 import headerLogo from './image/ziktu-logo.png';
 import cover1 from './image/cover1.jpg';
 import cover2 from './image/cover2.jpg';
@@ -10,6 +9,7 @@ import iso from './image/logo/iso-27001.svg';
 import sw from './image/logo/logo-sw.svg';
 import isms from './image/logo/logo-isms.svg';
 import blog from './image/logo/logo-naverblog.svg';
+import {AiOutlineMenu} from 'react-icons/ai';
 import {IoIosArrowForward} from 'react-icons/io';
 import {BsFacebook} from 'react-icons/bs';
 import {BsYoutube} from 'react-icons/bs';
@@ -42,10 +42,11 @@ function App() {
               <n.CategoryItem>채용</n.CategoryItem>
               <n.CategoryItem>FAQ</n.CategoryItem>
               <n.CategoryItem>
-                <n.AppDownloadBtn>카사 앱 다운로드</n.AppDownloadBtn>
+                <n.AppDownloadBtn>직투 앱 다운로드</n.AppDownloadBtn>
               </n.CategoryItem>
             </n.CategoryList>
           </n.CategoryDiv>
+          <AiOutlineMenu className='hamburger-icon'/>
         </n.NavigationWrap>
       </n.Navigation>
 
@@ -66,6 +67,7 @@ function App() {
         </c.CoverHeaderDiv>
         </c.HeaderContainer>
 
+        {/* 커버이미지 슬라이드 */}
         <Carousel
           showArrows={false}
           centerMode={false}
@@ -80,7 +82,6 @@ function App() {
           <img src={cover2} className='cover-img' alt='커버 이미지'></img>
           <img src={cover3} className='cover-img' alt='커버 이미지'></img>
         </Carousel>
-
       </c.CoverSection>
 
       {/* 회사 소개 영역 */}

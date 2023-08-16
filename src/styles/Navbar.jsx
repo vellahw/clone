@@ -7,6 +7,11 @@ export const Navigation = styled.nav`
     position: fixed;
     z-index: 999;
     background-color: #fff;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    height: auto;
+  }
 `
 
 export const NavigationWrap = styled.div`
@@ -14,16 +19,40 @@ export const NavigationWrap = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  /* width: 100%; */
   align-items: center;
 
   .header-logo {
     width: 80px;
   }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .header-logo {
+      width: 110px;
+    }
+
+    .hamburger-icon {
+      display: inline;
+      font-size: 32px;
+    }
+  }
 `
 
 export const CategoryDiv = styled.div`
   display: flex;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `
 
 export const CategoryList = styled.ul`
