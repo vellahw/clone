@@ -1,18 +1,28 @@
 import React from 'react';
 import logoPartner1 from '../image/logo/logo-partner1.png';
 import logoPartner2 from '../image/logo/logo-partner2.png';
-import * as i from '../styles/InfoSection';
+import Rectangle from '../image/logo/Rectangle.svg';
+import {FaCircle} from 'react-icons/fa';
+import * as i from '../styles/InfoStyle';
 
 export function CompanyInfo(){
+    const logoLoop = (length) => {
+        const newArr = [];
+        for (let i = 1; i <= length; i++) {
+          newArr.push(<FaCircle className='partners'/>);
+        }
+        return newArr;
+      };
+
     return (
         <i.InfoSection>
             <i.InfoTitle>회사 소개</i.InfoTitle>
             <i.InfoHeaderDiv>
-            <i.InfoHeaderText>
-                직투는 누구나 쉽게 부동산에 투자하고<br/>
-                그 권리를 사고 팔 수 있는<br/>
-                부동산 조각 투자 플랫폼입니다.<br/>
-            </i.InfoHeaderText>
+                <i.InfoHeaderText>
+                    직투는 누구나 쉽게 부동산에 투자하고<br/>
+                    그 권리를 사고 팔 수 있는<br/>
+                    부동산 조각 투자 플랫폼입니다.<br/>
+                </i.InfoHeaderText>
             </i.InfoHeaderDiv>
             <i.InfoCardDiv>
                 <i.InfoCard>
@@ -22,7 +32,12 @@ export function CompanyInfo(){
                         대한민국 최고의 은행과 신탁사에<br/>
                         안전하게 보관됩니다.
                     </i.InfoCardText>
-                    <img src={logoPartner1} className='partner-logo' alt='파트너 로고1'></img>
+
+                    <i.PartersLogo>
+                        { logoLoop(5) }
+                    </i.PartersLogo>
+
+                    {/* <img src={logoPartner1} className='partner-logo' alt='파트너 로고1'></img> */}
                 </i.InfoCard>
                 <i.InfoCardR>
                     <i.InfoCardTitle>기대하세요</i.InfoCardTitle>
@@ -31,7 +46,15 @@ export function CompanyInfo(){
                         직투에 국내외 대표 투자사,<br/>
                         금융기관이 투자 하였습니다.<br/>
                     </i.InfoCardText>
-                    <img src={logoPartner2} className='partner-logo' alt='파트너 로고2'></img>
+
+                    <i.PartersLogoR>
+                        { logoLoop(4) }
+                        <FaCircle className='partners' />
+                        <img src={Rectangle} alt="" className='rec'/>
+                        <FaCircle className='partners b' />
+                        <FaCircle className='partners' />
+                    </i.PartersLogoR>
+                    {/* <img src={logoPartner2} className='partner-logo' alt='파트너 로고2'></img> */}
                 </i.InfoCardR>
             </i.InfoCardDiv>
         </i.InfoSection>
@@ -40,7 +63,7 @@ export function CompanyInfo(){
 
 export function CorpInfo() {
     return (
-        <i.InfoSection>
+        <i.CorpSection>
             <i.InfoTitle>법인 회원</i.InfoTitle>
             <i.InfoHeaderDiv>
                 <i.HelpText>
@@ -54,8 +77,6 @@ export function CorpInfo() {
                     </a>
                 </i.ButtonDiv>
             </i.InfoHeaderDiv>
-      </i.InfoSection>
+      </i.CorpSection>
     )
 }
-
-// export default CompanyInfo;

@@ -10,31 +10,22 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      {/* 네비게이션 바 */}
       <Navbar />
 
-      {/* 상단 배너 */}
       <TopBanner />
 
-      {/* 회사 소개 */}
       <CompanyInfo />
 
-      {/* 중간 배너 */}
       <MiddleBanner />
 
-      {/* 플랫폼 소개 */}
       <FlatformInfo />
 
-      {/* 보도자료 */}
       <NewsList />
-      
-      {/* 하단 배너 */}
+
       <BottomBanner />
 
-      {/* 법인 회원 안내 */}
       <CorpInfo />
-
-      {/* footer */}
+      
       <Footer />
     </>
   );

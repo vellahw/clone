@@ -1,6 +1,6 @@
 import React from 'react';
-import * as f from '../styles/FlatformSection';
-import * as i from '../styles/InfoSection';
+import * as f from '../styles/FlatformStyle';
+import * as i from '../styles/InfoStyle';
 
 function FlatformInfo() {
     const card = [
@@ -37,10 +37,10 @@ function FlatformInfo() {
                 })}
 
                 <f.FlatformInfoCardB>
-                    <f.FlatformInfoCardTextB>건물 매각에 따른 투자수익까지</f.FlatformInfoCardTextB>
+                    <f.FlatformInfoCardText>건물 매각에 따른 투자수익까지</f.FlatformInfoCardText>
                 </f.FlatformInfoCardB>
                 <f.FlatformInfoCardBR>
-                    <f.FlatformInfoCardTextB>부동산 세금<br/>걱정없는 투자</f.FlatformInfoCardTextB>
+                    <f.FlatformInfoCardText>부동산 세금<br/>걱정없는 투자</f.FlatformInfoCardText>
                 </f.FlatformInfoCardBR>
             </f.FlatformInfoCardDiv>
         </f.FlatformSection>

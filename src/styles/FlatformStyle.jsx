@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import {InfoSection, InfoCardDiv, InfoCard, InfoCardR, InfoCardText} from './InfoSection';
+import {InfoSection, InfoCardDiv, InfoCard, InfoCardR, InfoCardText} from './InfoStyle';
 
 export const FlatformSection = styled(InfoSection)`
-    height: 1160px;
+    height: 1000px;
 `
 
 export const FlatformInfoCardDiv = styled(InfoCardDiv)`
@@ -10,12 +10,14 @@ export const FlatformInfoCardDiv = styled(InfoCardDiv)`
 `
 
 export const FlatformInfoCard = styled(InfoCard)`
-    width: 300px;
-    height: 510px;
+    background-color: #C1C2CB;
+
+    width: 225px;
+    height: 500px;
     border-radius: 15px;
     padding: 30px;
     margin-right: 15px;
-    background-color: #E7EBFA;
+    /* background-color: #E7EBFA; */
 `
 
 export const FlatformInfoCardText = styled(InfoCardText)`
@@ -24,23 +26,27 @@ export const FlatformInfoCardText = styled(InfoCardText)`
     width: 152px;
 ` 
 export const FlatformInfoCardB = styled(InfoCardR)`
-    background-color: #627AF5;
+    background-color: #C1C2CB;
+
+    /* background-color: #627AF5; */
     border-radius: 15px;
-    width: 207px;
+    width: 229px;
     height: 206px;
-    top: 612px;
+    top: 600px;
     left: 80px;
 `
 
 export const FlatformInfoCardTextB = styled(FlatformInfoCardText)`
     color: #fff;
-`
+`  
 
 export const FlatformInfoCardBR = styled(InfoCardR)`
-    background-color: #414551;
+    background-color: #C1C2CB;
+
+    /* background-color: #414551; */
     border-radius: 15px;
-    width: 522px;
+    width: 529px;
     height: 206px;
-    top: 612px;
-    left: 395px;
+    top: 600px;
+    left: 380px;
 `

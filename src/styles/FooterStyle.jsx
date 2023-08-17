@@ -1,17 +1,22 @@
 import styled from 'styled-components';
-import {NewsSection} from './NewsSection'; 
-import {InfoSection} from './InfoSection'; 
+import {NewsSection} from './NewsListStyle'; 
+import {InfoSection} from './InfoStyle'; 
 
 export const FooterSection = styled(NewsSection)`
     margin-top: 48px;
+    height: auto;
 `
 
 export const FooterContainer = styled(InfoSection)`
-    padding-top: 50px;
+    height: 100%;
     position: relative;
+    padding: 40px 0 80px 0;
 `
 
 export const AddressDiv = styled.div`
+    background-color: #E1E1E5;
+
+    display: flex;
     color: #414551;
     padding-top: 6px;
     font-weight: 600;
@@ -35,6 +40,8 @@ export const Line = styled.span`
 `
 
 export const Copyright = styled.p`
+    background-color: #E1E1E5;
+
     font-weight: normal;
     color: #414551;
     margin-top: 10px;
@@ -42,6 +49,8 @@ export const Copyright = styled.p`
 `
 
 export const SocialLogoDiv = styled.div`
+    background-color: #C1C2CB;
+
     display: flex;
     position: absolute;
     right: 0;
@@ -57,6 +66,8 @@ export const SocialLogoDiv = styled.div`
 `
 
 export const ArticleDiv = styled.div`
+    background-color: #E1E1E5;
+
     color: #414551;
     font-weight: 600;
     padding-top: 18px;
@@ -73,6 +84,7 @@ export const CompanyInfoDiv = styled(ArticleDiv)`
 `
 
 export const CompanyHeader = styled.p`
+
     margin-bottom: 5px;
 `
 export const LogoContainer = styled.div`

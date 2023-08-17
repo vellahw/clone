@@ -1,16 +1,36 @@
 import styled from 'styled-components';
-import {InfoHeaderDiv} from './InfoSection'; 
+import {InfoHeaderDiv, InfoSection, InfoTitle, InfoHeaderText} from './InfoStyle'; 
 
 export const NewsSection = styled.section`
     background-color: #F6F6F9;
     height: auto;
 `
 
-export const NewsHeaderDiv = styled(InfoHeaderDiv)`
+export const NewsWrapper = styled(InfoSection)`
+    background-color: #E1E1E5;
+    height: 560px;
+`
+export const SectionTitle = styled(InfoTitle)`
+    background-color: #C1C2CB;
+    
+`
+export const NewsContainer = styled.div`
+    background-color: #C1C2CB;
+    margin-top: 44px;
+    margin-left: 90px;
+`
+
+export const NewsHeaderDiv = styled.div`
     display: flex;
     justify-content: space-between;
 `
+
+export const NewsHeader = styled(InfoHeaderText)`
+    background-color: #9B9CA6;
+`
+
 export const ViewAllTextDiv = styled.div`
+    background-color: #9B9CA6;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -25,11 +45,15 @@ export const ViewAllText = styled.div`
 `
 
 export const NewsList = styled.ul`
+    margin: 0;
+    padding: 0;
 `
 
 export const NewsItem = styled.li`
+    background-color: #9B9CA6;
+
     /* padding-left: 40px; */
-    margin: 14px 0 40px 40px;
+    /* margin: 14px 0 40px 40px; */
     cursor: pointer;
     border-bottom: 1px solid #dadee3;
 `

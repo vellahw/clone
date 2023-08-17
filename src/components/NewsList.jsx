@@ -1,7 +1,7 @@
 import React from 'react';
 import {IoIosArrowForward} from 'react-icons/io';
-import * as ns from '../styles/NewsSection';
-import * as i from '../styles/InfoSection';
+import * as ns from '../styles/NewsListStyle';
+import * as i from '../styles/InfoStyle';
 
 function NewsList() {
     const news = [
@@ -27,37 +27,46 @@ function NewsList() {
     
     return (
         <ns.NewsSection>
-        <i.InfoSection>
-          <i.InfoTitle>직투 소식</i.InfoTitle>
-          <ns.NewsHeaderDiv>
-            <i.InfoHeaderText>
-              보도자료
-            </i.InfoHeaderText>
-            <ns.ViewAllTextDiv>
-              <ns.ViewAllText>
-                전체보기
-              </ns.ViewAllText>
-              <IoIosArrowForward className='arrow-icon'/>
-            </ns.ViewAllTextDiv>
-          </ns.NewsHeaderDiv>
-          <ns.NewsList>
-            { news.map(i=>{
-                return (
-                  <ns.NewsItem key={i.no}>
-                    <ns.NewsTitle>
-                      {i.title}
-                    </ns.NewsTitle>
-                  <ns.NewsInfo>
-                    <ns.NewsPress>{i.press}</ns.NewsPress>
-                    <ns.Line>|</ns.Line>
-                    <ns.NewsDate>{i.date}</ns.NewsDate>
-                  </ns.NewsInfo>
-                  </ns.NewsItem>
-                )
-              })
-            }
-          </ns.NewsList>
-        </i.InfoSection>
+          <ns.NewsWrapper>
+          <ns.SectionTitle>직투 소식</ns.SectionTitle>
+          {/* <i.InfoSection> */}
+          {/* <i.InfoTitle>직투 소식</i.InfoTitle> */}
+
+          <ns.NewsContainer>
+            <ns.NewsHeaderDiv>
+              <ns.NewsHeader>
+                보도자료
+              </ns.NewsHeader>
+              {/* <i.InfoHeaderText>
+                보도자료
+              </i.InfoHeaderText> */}
+              <ns.ViewAllTextDiv>
+                <ns.ViewAllText>
+                  전체보기
+                </ns.ViewAllText>
+                <IoIosArrowForward className='arrow-icon'/>
+              </ns.ViewAllTextDiv>
+            </ns.NewsHeaderDiv>
+            <ns.NewsList>
+              { news.map(i=>{
+                  return (
+                    <ns.NewsItem key={i.no}>
+                      <ns.NewsTitle>
+                        {i.title}
+                      </ns.NewsTitle>
+                    <ns.NewsInfo>
+                      <ns.NewsPress>{i.press}</ns.NewsPress>
+                      <ns.Line>|</ns.Line>
+                      <ns.NewsDate>{i.date}</ns.NewsDate>
+                    </ns.NewsInfo>
+                    </ns.NewsItem>
+                  )
+                })
+              }
+            </ns.NewsList>
+          </ns.NewsContainer>
+          </ns.NewsWrapper>
+        {/* </i.InfoSection> */}
       </ns.NewsSection>
     )
 }

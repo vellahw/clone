@@ -5,7 +5,7 @@ import blog from '../image/logo/logo-naverblog.svg';
 import {BsFacebook} from 'react-icons/bs';
 import {BsYoutube} from 'react-icons/bs';
 import {BsTelegram} from 'react-icons/bs';
-import * as fo from '../styles/Footer';
+import * as fo from '../styles/FooterStyle';
 
 function Footer() {
     return (
@@ -27,10 +27,10 @@ function Footer() {
             <fo.Address>
               contact@ziktu.com
             </fo.Address>
-            <fo.Copyright>
-              ⓒ 2023. ziktu Inc. All rights reserved.
-            </fo.Copyright>
           </fo.AddressDiv>
+          <fo.Copyright>
+              ⓒ 2023. ziktu Inc. All rights reserved.
+          </fo.Copyright>
 
           <fo.SocialLogoDiv>
             <a href='https://www.facebook.com/bitstoa/' target='_blank' rel="noreferrer">

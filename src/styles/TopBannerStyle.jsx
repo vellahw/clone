@@ -1,40 +1,31 @@
 import styled from 'styled-components';
 
 export const CoverSection = styled.section`
-
-  @media (max-width: 1024px) {
-    position: relative;
-    /* top: 0; */
-    margin: 0 auto;
-
-    /* .cover-img {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-    } */
-  }
+  background-color: #F6F6F9;
+  height: 100vh;
 
   @media (max-width:767px) {
-    position: relative;
     margin: 0 auto;
-
-    /* .cover-img {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-    } */
   }
 `
 
 export const HeaderContainer = styled.div`
-  max-width: 1024px;
-  margin: 0 auto;
+  @media (min-width: 1024px) {
+    background-color: #E1E1E5;
+    
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 
 export const CoverHeaderDiv = styled.div`
+  background-color: #C1C2CB;
+
   color: #fff;
-  position: absolute;
-  top: 35%;
   z-index: 1;
 
   @media (max-width: 767px) {
@@ -44,6 +35,8 @@ export const CoverHeaderDiv = styled.div`
 `
 
 export const CoverHeader = styled.h1`
+  background-color: #9B9CA6;
+
   font-size: 54px;
   margin: 0;
 
@@ -53,6 +46,8 @@ export const CoverHeader = styled.h1`
 `
 
 export const CoverHeaderTextDiv = styled.div`
+  background-color: #9B9CA6;
+
   font-size: 22px;
   font-weight: 600;
   margin-top: 18px;

@@ -14,17 +14,21 @@ export const Navigation = styled.nav`
 `
 
 export const NavigationWrap = styled.div`
+  background-color: #F6F6F9;
+
   max-width: 1024px;
   margin: 0 auto;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .header-logo {
     width: 80px;
+    background-color: #C1C2CB;
   }
 
-  .hamburger-icon {
+  .hamburger-menu {
     display: none;
   }
 
@@ -57,12 +61,15 @@ export const CategoryList = styled.ul`
 `
 
 export const CategoryItem = styled.li`
+  background-color: #C1C2CB;
+
   cursor: pointer;
   margin: 0 12px;
 `
 
 export const AppDownloadBtn = styled.button`
-  background-color: transparent;
+  background-color: #627AF5;
+  color: #fff;
   border: 1px solid #fff;
   border-radius: 4px;
   font-size: 16px;

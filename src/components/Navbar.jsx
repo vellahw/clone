@@ -1,7 +1,7 @@
 import React from 'react';
 import headerLogo from '../image/logo/ziktu-logo.png';
 import {AiOutlineMenu} from 'react-icons/ai';
-import * as n from '../styles/Navbar';
+import * as n from '../styles/NavbarStyle';
 
 function Navbar() {
     return (
@@ -10,7 +10,7 @@ function Navbar() {
                 <a href='http://localhost:3000/' rel="noreferrer">
                     <img src={headerLogo} className='header-logo' alt='로고 이미지'></img>
                 </a>
-                <AiOutlineMenu className='hamburger-icon'/>
+                <AiOutlineMenu className='hamburger-menu'/>
 
                 <n.CategoryDiv>
                     <n.CategoryList>
