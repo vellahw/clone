@@ -9,7 +9,7 @@ export const Navigation = styled.nav`
     background-color: #fff;
 
   @media (max-width: 767px) {
-    /* width: 100%; */
+    width: 100%;
   }
 `
 
@@ -28,19 +28,20 @@ export const NavigationWrap = styled.div`
     background-color: #C1C2CB;
   }
 
-  .hamburger-menu {
-    display: none;
+  @media(max-width: 1024px) {
+    .hamburger-menu {
+      display: none;
+    }
   }
 
   @media(max-width: 767px) {
-    max-width: 100%;
 
     .header-logo {
       width: 90px;
     }
 
-    .hamburger-icon {
-      display: block;
+    .hamburger-menu {
+      display: inline;
       font-size: 32px;
     }
   }

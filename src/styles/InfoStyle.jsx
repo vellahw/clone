@@ -11,7 +11,9 @@ export const InfoSection = styled.section`
   padding: 100px 0;
   
   @media (max-width: 767px) {
-    padding: 40px;
+    background-color: #F6F6F9;
+    padding: 40px 0;
+    max-width: 735px;
   }
 `
 
@@ -25,7 +27,13 @@ export const InfoTitle = styled.h2`
 export const InfoHeaderDiv = styled.div`
   background-color: #E1E1E5;
 
-padding: 28px 0 0 80px;
+  @media(max-width: 1024px) {
+    padding: 28px 0 0 80px;
+  }
+  
+  @media(max-width: 767px) {
+    padding: 0;
+  }
 `
 
 export const InfoHeaderText = styled.p`
@@ -35,6 +43,12 @@ export const InfoHeaderText = styled.p`
   font-size: 28px;
   font-weight: 600;
   line-height: 46px;
+
+  @media(max-width: 767px) {
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #E1E1E5;
+  }
 `
 
 export const InfoCardDiv = styled.div`
@@ -46,6 +60,7 @@ export const InfoCardDiv = styled.div`
   position: relative;
 
   @media (max-width:767px) {
+    padding: 0;
   }
 `
 
@@ -65,7 +80,8 @@ export const InfoCard = styled.div`
   }
 
   @media(max-width:767px){
-
+    width: 100%;
+    height: 209px;
   }
 `
 
@@ -93,7 +109,11 @@ export const InfoCardR = styled(InfoCard)`
   }
   
   @media(max-width:767px){
-    top: 0;
+    position: absolute;
+
+    /* width: 100%; */
+    /* height: 209px; */
+    top:320px;
     left: 0;
   }
 `
