@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {CoverButton} from './CoverSection';
+import {CoverButton} from './TopBanner';
 
 
 export const InfoSection = styled.section`

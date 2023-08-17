@@ -21,6 +21,7 @@ export const FlatformInfoCard = styled(InfoCard)`
 export const FlatformInfoCardText = styled(InfoCardText)`
     line-height: 34px;
     word-break: keep-all;
+    width: 152px;
 ` 
 export const FlatformInfoCardB = styled(InfoCardR)`
     background-color: #627AF5;
@@ -29,6 +30,10 @@ export const FlatformInfoCardB = styled(InfoCardR)`
     height: 206px;
     top: 612px;
     left: 80px;
+`
+
+export const FlatformInfoCardTextB = styled(FlatformInfoCardText)`
+    color: #fff;
 `
 
 export const FlatformInfoCardBR = styled(InfoCardR)`

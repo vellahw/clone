@@ -36,12 +36,20 @@ export const CoverHeaderDiv = styled.div`
   position: absolute;
   top: 35%;
   z-index: 1;
+
+  @media (max-width: 767px) {
+    text-align: center;
+    left: 24%;
+  }
 `
 
 export const CoverHeader = styled.h1`
   font-size: 54px;
   margin: 0;
 
+  @media (max-width: 767px) {
+    font-size: 28px;
+  }
 `
 
 export const CoverHeaderTextDiv = styled.div`
@@ -51,6 +59,10 @@ export const CoverHeaderTextDiv = styled.div`
 
   .text{
     margin: 0;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
   }
 `
 export const CoverButton = styled.button`
@@ -63,6 +75,10 @@ export const CoverButton = styled.button`
   width: 146px;
   height: 48px;
   margin-top: 28px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `
 
 export const CoverImgContainer = styled.div`

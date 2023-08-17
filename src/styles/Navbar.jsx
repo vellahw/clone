@@ -9,8 +9,7 @@ export const Navigation = styled.nav`
     background-color: #fff;
 
   @media (max-width: 767px) {
-    width: 100%;
-    height: auto;
+    /* width: 100%; */
   }
 `
 
@@ -29,19 +28,15 @@ export const NavigationWrap = styled.div`
     display: none;
   }
 
-  @media (max-width: 767px) {
-    /* margin: 0 auto; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  @media(max-width: 767px) {
+    max-width: 100%;
 
     .header-logo {
-      width: 110px;
+      width: 90px;
     }
 
     .hamburger-icon {
-      display: inline;
+      display: block;
       font-size: 32px;
     }
   }
