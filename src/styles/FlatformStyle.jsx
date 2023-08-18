@@ -3,6 +3,8 @@ import {InfoSection, InfoCardDiv, InfoCard, InfoCardR, InfoCardText} from './Inf
 
 export const FlatformSection = styled(InfoSection)`
     height: 1000px;
+    overflow-y: visible;
+    overflow-x: auto;
 
     @media(max-width: 767px) {
         height: auto ;

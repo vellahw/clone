@@ -5,11 +5,13 @@ import {CoverButton} from './TopBannerStyle';
 export const InfoSection = styled.section`
   background-color: #F6F6F9;
   height: 690px;
-
   max-width: 1024px;
   margin: 0 auto;
   padding: 100px 0;
-  
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+
   @media (max-width: 767px) {
     background-color: #F6F6F9;
     padding: 80px 0;

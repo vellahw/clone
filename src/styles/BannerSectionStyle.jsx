@@ -70,6 +70,7 @@ export const BottomBannerContainer = styled.div`
 `
 
 export const ImgContainer = styled.div`
+  width: 100vw;
 
   @media(max-width: 767px) {
     position: absolute;
@@ -78,8 +79,6 @@ export const ImgContainer = styled.div`
 `  
 
 export const BottomBannerImg = styled.div`
-  width: 100%;
-  height: 100%;
 `
 
 export const BottomBannerHeaderDiv = styled.div`
