@@ -32,6 +32,9 @@ function FlatformInfo() {
                             <f.FlatformInfoCardText>
                                 {i.title}
                             </f.FlatformInfoCardText>
+                            <f.FlatformCardImgContainer>
+                                <f.FlatformCardImg></f.FlatformCardImg>
+                            </f.FlatformCardImgContainer>
                         </f.FlatformInfoCard>
                     )
                 })}
@@ -41,6 +44,9 @@ function FlatformInfo() {
                 </f.FlatformInfoCardB>
                 <f.FlatformInfoCardBR>
                     <f.FlatformInfoCardText>부동산 세금<br/>걱정없는 투자</f.FlatformInfoCardText>
+                    <f.FlatformCardImgContainerBR>
+                        <f.FlatformCardImgBR></f.FlatformCardImgBR>
+                    </f.FlatformCardImgContainerBR>
                 </f.FlatformInfoCardBR>
             </f.FlatformInfoCardDiv>
         </f.FlatformSection>

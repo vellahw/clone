@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const Navigation = styled.nav`
-  width: 100%;
+  width: 100vw;
   height: 64px;
   align-items: center;
   position: fixed;
   z-index: 999;
-  background-color: #fff;
+  display: flex;
+  background-color: #F6F6F9;
 
   @media (max-width: 767px) {
     width: 100vw;
@@ -18,8 +19,10 @@ export const Navigation = styled.nav`
 `
 
 export const NavigationWrap = styled.div`
-  background-color: #F6F6F9;
-
+  background-color: #E8E8EC;
+  padding: 0 16px;
+  
+  width: 100%;
   max-width: 1024px;
   margin: 0 auto;
   height: 100%;
@@ -30,30 +33,32 @@ export const NavigationWrap = styled.div`
   .header-logo {
     width: 80px;
     background-color: #D2D2D9;
-  }
-  
-  .hamburger-menu {
-    display: none;
+
+    @media(min-width: 767px) {
+      margin-top: 4px;
+      background-color: #D2D2D9;
+    }
   }
 
   @media(min-width: 767px) {
-    padding: 0 16px;
-
-    .header-logo {
-      margin-top: 4px;
-      background-color: #E8E8EC;
-    }
-
     .hamburger-menu {
-      background-color: #E8E8EC;
-      display: inline;
+      background-color: #D2D2D9;
       font-size: 20px;
     }
   }
 `
+export const HamburgerDiv = styled.div`
+  display: none;
+  background-color: #D2D2D9;
+  font-size: 20px;
+
+  @media(max-width: 767px) {
+    display: block;
+  }
+`
 
 export const CategoryDiv = styled.div`
-  display: flex;
+  background-color: #D2D2D9;
 
   @media (max-width: 767px) {
     display: none;
@@ -67,7 +72,7 @@ export const CategoryList = styled.ul`
 `
 
 export const CategoryItem = styled.li`
-  background-color: #D2D2D9;
+  background-color: #BABBC3;
 
   cursor: pointer;
   margin: 0 12px;
@@ -76,9 +81,14 @@ export const CategoryItem = styled.li`
 export const AppDownloadBtn = styled.button`
   background-color: #627AF5;
   color: #fff;
-  border: 1px solid #fff;
+  border: none;
+  /* border: 1px solid #fff; */
   border-radius: 4px;
   font-size: 16px;
   width: 138px;
   height: 40px;
+
+  @media (max-width: 767px) {
+    border: none;
+  }
 `

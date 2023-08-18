@@ -10,7 +10,10 @@ function Navbar() {
                 <a href='http://localhost:3000/' rel="noreferrer">
                     <img src={headerLogo} className='header-logo' alt='로고 이미지'></img>
                 </a>
-                <AiOutlineMenu className='hamburger-menu'/>
+                
+                <n.HamburgerDiv>
+                    <AiOutlineMenu className='hamburger-menu'/>
+                </n.HamburgerDiv>
 
                 <n.CategoryDiv>
                     <n.CategoryList>

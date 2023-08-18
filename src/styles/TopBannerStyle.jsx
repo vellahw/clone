@@ -16,7 +16,7 @@ export const CoverSection = styled.section`
 `
 
 export const HeaderContainer = styled.div`
-  @media (min-width: 1024px) {
+  /* @media (min-width: 1024px) { */
     background-color: #E8E8EC;
     
     max-width: 1024px;
@@ -25,12 +25,12 @@ export const HeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+  /* } */
 
   @media (max-width: 767px) {
     width: 100%;
     position: absolute;
-    top: 340px;
+    /* top: 340px; */
   }
 `
 
@@ -42,9 +42,9 @@ export const CoverHeaderDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
+  
   @media (max-width: 767px) {
+    align-items: center;
     background-color: #E8E8EC;
     text-align: center;
   }

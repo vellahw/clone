@@ -13,13 +13,19 @@ export const FooterSection = styled(NewsSection)`
 `
 
 export const FooterContainer = styled(InfoSection)`
+    background-color: #E8E8EC;
+
     height: 100%;
     position: relative;
-    padding: 40px 0 100px 0;
+    padding: 40px 0 80px 0;
+
+    @media(max-width: 767px) {
+        padding-bottom: 100px;
+    }
 `
 
 export const AddressDiv = styled.div`
-    background-color: #E8E8EC;
+    background-color: #D2D2D9;
 
     display: flex;
     color: #414551;
@@ -34,6 +40,8 @@ export const AddressDiv = styled.div`
 `
 
 export const AddressArticle = styled.address`
+    background-color: #BABBC3;
+
     @media(max-width: 767px) {
         margin-top: 3px;
     }
@@ -44,6 +52,8 @@ export const AddressHeader = styled.span`
 `
 
 export const Address = styled.address`
+    background-color: #BABBC3;
+
     margin-right: 12px;
     font-weight: normal;
     color: #414551;
@@ -60,7 +70,7 @@ export const Line = styled.span`
 `
 
 export const Copyright = styled.p`
-    background-color: #E8E8EC;
+    background-color: #D2D2D9;
 
     font-weight: normal;
     color: #414551;
@@ -85,19 +95,23 @@ export const SocialLogoDiv = styled.div`
     }
 
     @media(max-width: 767px) {
+        background-color: #BABBC3;
+
         position: static;
         margin-top: 40px;
     }
 `
 
 export const ArticleDiv = styled.div`
-    background-color: #E8E8EC;
+    background-color: #D2D2D9;
 
     color: #414551;
     font-weight: 600;
     padding-top: 20px;
 
     .business-info{
+        background-color: #BABBC3;
+
         display: flex;
         align-items: center;
         padding-top: 0;
@@ -136,10 +150,13 @@ export const CompanyInfoDiv = styled(ArticleDiv)`
 `
 
 export const CompanyHeader = styled.p`
+    background-color: #BABBC3;
 
     margin-bottom: 5px;
 `
 export const LogoContainer = styled.div`
+    background-color: #BABBC3;
+
     margin-top: 48px;
     display: flex;
 

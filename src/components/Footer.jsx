@@ -13,23 +13,23 @@ function Footer() {
         <fo.FooterContainer>
           <fo.AddressDiv>
             <fo.AddressArticle>
-            <fo.AddressHeader>
-              언론보도
-            </fo.AddressHeader>
-            <fo.Address>
-              press@ziktu.com
-            </fo.Address>
+              <fo.AddressHeader>
+                언론보도
+              </fo.AddressHeader>
+              <fo.Address>
+                press@ziktu.com
+              </fo.Address>
             </fo.AddressArticle>
             <fo.Line>
               |
             </fo.Line>
             <fo.AddressArticle>
-            <fo.AddressHeader>
-              대표문의
-            </fo.AddressHeader>
-            <fo.Address>
-              contact@ziktu.com
-            </fo.Address>
+              <fo.AddressHeader>
+                대표문의
+              </fo.AddressHeader>
+              <fo.Address>
+                contact@ziktu.com
+              </fo.Address>
             </fo.AddressArticle>
           </fo.AddressDiv>
           <fo.Copyright>

@@ -90,6 +90,8 @@ export const InfoCard = styled.div`
 `
 
 export const PartersLogo = styled.div`
+  background-color: #BABBC3;
+
   color: #fff;
   float: right;
 
@@ -173,7 +175,7 @@ export const PartersLogoR = styled(PartersLogo)`
 `
 
 export const InfoCardTitle = styled(InfoTitle)`
-  background-color: transparent;
+  background-color: #BABBC3;
 
   margin: 0;
   padding-bottom: 20px;
@@ -184,7 +186,7 @@ export const InfoCardTitle = styled(InfoTitle)`
 `
 
 export const InfoCardText = styled(InfoHeaderText)`
-  background-color: transparent;
+  background-color: #BABBC3;
 
   font-size: 22px;
   line-height: 36px;
@@ -215,6 +217,8 @@ export const ButtonDiv = styled.div`
 `
 
 export const HelpText = styled(InfoHeaderText)`
+  background-color: #D2D2D9;
+
   font-size: 22px;
   line-height: 36px;
 

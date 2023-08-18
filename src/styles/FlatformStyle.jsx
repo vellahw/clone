@@ -21,6 +21,7 @@ export const FlatformInfoCardDiv = styled(InfoCardDiv)`
 
 export const FlatformInfoCard = styled(InfoCard)`
     background-color: #D2D2D9;
+    overflow-y: hidden;
 
     width: 225px;
     height: 500px;
@@ -39,6 +40,8 @@ export const FlatformInfoCard = styled(InfoCard)`
 `
 
 export const FlatformInfoCardText = styled(InfoCardText)`
+    background-color: #BABBC3;
+
     line-height: 34px;
     word-break: keep-all;
     width: 152px;
@@ -46,9 +49,27 @@ export const FlatformInfoCardText = styled(InfoCardText)`
     @media(max-width: 767px) {
         width: 120px;
         line-height: 28px;
-
     }
 ` 
+
+export const FlatformCardImgContainer = styled.div`
+    @media(max-width: 767px) {
+        background-color: #BABBC3;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        overflow-y: hidden;
+    }
+`
+export const FlatformCardImg = styled.div`
+    @media(max-width: 767px) {
+        background-color: #fff;
+        width: 177px;
+        height: 370px;
+        border-radius: 22px 22px 0 0;
+    }
+`
+
 export const FlatformInfoCardB = styled(InfoCardR)`
     background-color: #D2D2D9;
 
@@ -75,6 +96,7 @@ export const FlatformInfoCardTextB = styled(FlatformInfoCardText)`
 
 export const FlatformInfoCardBR = styled(InfoCardR)`
     background-color: #D2D2D9;
+    overflow-y: hidden;
 
     /* background-color: #414551; */
     border-radius: 15px;
@@ -86,8 +108,20 @@ export const FlatformInfoCardBR = styled(InfoCardR)`
     @media(max-width: 767px) {
         position: relative;
         width: calc(100% - 60px);
+        height: 368px;
         margin: 0;
         top: 0;
         left: 0;
     }
+`
+
+export const FlatformCardImgContainerBR = styled(FlatformCardImgContainer)`
+    bottom: 50px;
+    margin-top: 70px;
+`
+
+export const FlatformCardImgBR = styled(FlatformCardImg)`
+    border-radius: 0;
+    width: 200px;
+    height: 200px;
 `
