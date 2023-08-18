@@ -5,6 +5,10 @@ import {InfoSection} from './InfoStyle';
 export const FooterSection = styled(NewsSection)`
     margin-top: 48px;
     height: auto;
+
+    @media(max-width: 767px) {
+        margin-top: 0;
+    }
 `
 
 export const FooterContainer = styled(InfoSection)`
@@ -14,7 +18,7 @@ export const FooterContainer = styled(InfoSection)`
 `
 
 export const AddressDiv = styled.div`
-    background-color: #E1E1E5;
+    background-color: #E8E8EC;
 
     display: flex;
     color: #414551;
@@ -40,7 +44,7 @@ export const Line = styled.span`
 `
 
 export const Copyright = styled.p`
-    background-color: #E1E1E5;
+    background-color: #E8E8EC;
 
     font-weight: normal;
     color: #414551;
@@ -49,7 +53,7 @@ export const Copyright = styled.p`
 `
 
 export const SocialLogoDiv = styled.div`
-    background-color: #C1C2CB;
+    background-color: #D2D2D9;
 
     display: flex;
     position: absolute;
@@ -66,7 +70,7 @@ export const SocialLogoDiv = styled.div`
 `
 
 export const ArticleDiv = styled.div`
-    background-color: #E1E1E5;
+    background-color: #E8E8EC;
 
     color: #414551;
     font-weight: 600;

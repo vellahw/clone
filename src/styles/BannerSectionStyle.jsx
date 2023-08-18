@@ -15,9 +15,13 @@ export const MiddleBannerSection = styled.section`
     height: 100%;
     width: 100%;
   }
+
+  @media(max-width: 767px) {
+    height: 100vh;
+  }
 `
 export const MiddleBannerHeaderDiv = styled.div`
-  /* background-color: #E1E1E5; */
+  /* background-color: #E8E8EC; */
 
   position: absolute;
   top: 35%;
@@ -25,7 +29,7 @@ export const MiddleBannerHeaderDiv = styled.div`
 `
 
 export const BannerHeader = styled.h1`
-  background-color: #E1E1E5;
+  background-color: #E8E8EC;
   color: #000;
   position: absolute;
   width: 100vw;
@@ -34,24 +38,43 @@ export const BannerHeader = styled.h1`
   /* color: #fff; */
   font-size: 54px;
   /* margin: 0; */
+
+  @media(max-width: 767px) {
+    font-size: 36px;
+    top: 40%;
+  }
 `
 
 export const BottomBannerSection = styled.section`
   background-color: #F6F6F9;
   height: 540px;
+
+  @media(max-width: 767px) {
+    height: 1000px;
+  }
   
   /* background-color: #627AF5; */
 `
 
 export const BottomBannerContainer = styled.div`
   position: relative;
-  background-color: #E1E1E5;
+  background-color: #E8E8EC;
   max-width: 1300px;
   margin: 0 auto;
   height: 100%;
+
+  @media(max-width: 767px) {
+    width: 100%;
+    height: 100%;
+  }
 `
 
 export const ImgContainer = styled.div`
+
+  @media(max-width: 767px) {
+    position: absolute;
+    height: 100%; 
+  }
 `  
 
 export const BottomBannerImg = styled.div`
@@ -60,16 +83,27 @@ export const BottomBannerImg = styled.div`
 `
 
 export const BottomBannerHeaderDiv = styled.div`
-  background-color: #C1C2CB;
+  background-color: #D2D2D9;
   padding-top: 136px;
   width: 1024px;
   margin: 0 auto;
+
+  @media(max-width: 767px) {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    position: absolute;
+  }
 `
 
 export const BottomBannerHeader = styled.h1`
-  background-color: #9B9CA6;
+  background-color: #BABBC3;
   margin: 0;
   font-size: 54px;
+
+  @media(max-width: 767px) {
+    font-size: 28px;
+  }
 `
 
 export const BottomBannerButton = styled.button`
@@ -82,12 +116,22 @@ export const BottomBannerButton = styled.button`
   height: 48px;
   border-radius: 4px;
   margin-top: 32px;
+
+  @media(max-width: 767px) {
+    display: none;
+  }
 `
 
 export const BottomBannerInfo = styled.p`
-  background-color: #9B9CA6;
+  background-color: #BABBC3;
 
   color: #fff;
   font-size: 12px;
   padding: 28px 0 0 4px;
+
+  @media(max-width: 767px) {
+    width: 270px;
+    padding: 24px 0 0 0;
+    margin: 0 auto;
+  }
 `

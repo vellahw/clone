@@ -1,4 +1,3 @@
-import React from 'react';
 import logoPartner1 from '../image/logo/logo-partner1.png';
 import logoPartner2 from '../image/logo/logo-partner2.png';
 import Rectangle from '../image/logo/Rectangle.svg';
@@ -49,7 +48,7 @@ export function CompanyInfo(){
 
                     <i.PartersLogoR>
                         { logoLoop(4) }
-                        <FaCircle className='partners' />
+                        <FaCircle className='partners b1' />
                         <img src={Rectangle} alt="" className='rec'/>
                         <FaCircle className='partners b' />
                         <FaCircle className='partners' />

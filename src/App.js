@@ -6,6 +6,7 @@ import FlatformInfo from './components/FlatformInfo';
 import NewsList from './components/NewsList';
 import BottomBanner from './components/BottomBanner';
 import Footer from './components/Footer';
+import MobileFloatingBtn from './components/MobileFloatingBtn';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
       <CorpInfo />
       
       <Footer />
+
+      <MobileFloatingBtn />
     </>
   );
 }

@@ -7,17 +7,26 @@ export const NewsSection = styled.section`
 `
 
 export const NewsWrapper = styled(InfoSection)`
-    background-color: #E1E1E5;
+    background-color: #E8E8EC;
     height: 560px;
+    padding-top: 28px;
+
+    @media(max-width: 767px) {
+        height: auto;
+    }
 `
 export const SectionTitle = styled(InfoTitle)`
-    background-color: #C1C2CB;
+    background-color: #D2D2D9;
     
 `
 export const NewsContainer = styled.div`
-    background-color: #C1C2CB;
+    background-color: #D2D2D9;
     margin-top: 44px;
     margin-left: 90px;
+    
+    @media(max-width: 767px) {
+        margin-left: 0;
+    }
 `
 
 export const NewsHeaderDiv = styled.div`
@@ -26,11 +35,11 @@ export const NewsHeaderDiv = styled.div`
 `
 
 export const NewsHeader = styled(InfoHeaderText)`
-    background-color: #9B9CA6;
+    background-color: #BABBC3;
 `
 
 export const ViewAllTextDiv = styled.div`
-    background-color: #9B9CA6;
+    background-color: #BABBC3;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -38,10 +47,20 @@ export const ViewAllTextDiv = styled.div`
     .arrow-icon{
         font-size: 18px;
         padding-left: 3px;
+        
+        @media(max-width: 767px) {
+            font-size: 17px;
+            padding-top: 1px;
+        }
     }
+
 `
 export const ViewAllText = styled.div`
     font-size: 20px;
+
+    @media(max-width: 767px) {
+        font-size: 15px;
+    }
 `
 
 export const NewsList = styled.ul`
@@ -50,7 +69,7 @@ export const NewsList = styled.ul`
 `
 
 export const NewsItem = styled.li`
-    background-color: #9B9CA6;
+    background-color: #BABBC3;
 
     /* padding-left: 40px; */
     /* margin: 14px 0 40px 40px; */
@@ -62,11 +81,21 @@ export const NewsTitle = styled.h2`
     font-weight: normal;
     font-size: 26px;
     margin: 40px 0 12px 0;
+
+    @media(max-width: 767px) {
+        font-size: 16px;
+        margin: 26px 0 12px 0;
+    }
 `
 
 export const NewsInfo = styled.div`
     color: #626870;
     padding: 0 0 34px 5px;
+
+    @media(max-width: 767px) {
+        padding: 0 0 24px 0;
+        font-size: 14px;
+    }
 `
 
 export const NewsPress = styled.span`

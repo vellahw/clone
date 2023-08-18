@@ -29,9 +29,9 @@ function FlatformInfo() {
                 { card.map(i=>{
                     return (
                         <f.FlatformInfoCard key={i.no}>
-                        <f.FlatformInfoCardText>
-                            {i.title}
-                        </f.FlatformInfoCardText>
+                            <f.FlatformInfoCardText>
+                                {i.title}
+                            </f.FlatformInfoCardText>
                         </f.FlatformInfoCard>
                     )
                 })}

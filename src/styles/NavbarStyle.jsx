@@ -1,16 +1,20 @@
 import styled from 'styled-components';
 
 export const Navigation = styled.nav`
-    width: 100%;
-    height: 64px;
-    align-items: center;
-    position: fixed;
-    z-index: 999;
-    background-color: #fff;
+  width: 100%;
+  height: 64px;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
 
   @media (max-width: 767px) {
-    width: 100%;
-  }
+    width: 100vw;
+    max-width:100%;
+    height: 56px;
+    overflow-x: hidden;
+    border-bottom: 1px solid #E8E8EC;
+ }
 `
 
 export const NavigationWrap = styled.div`
@@ -25,24 +29,25 @@ export const NavigationWrap = styled.div`
 
   .header-logo {
     width: 80px;
-    background-color: #C1C2CB;
+    background-color: #D2D2D9;
+  }
+  
+  .hamburger-menu {
+    display: none;
   }
 
-  @media(max-width: 1024px) {
-    .hamburger-menu {
-      display: none;
-    }
-  }
-
-  @media(max-width: 767px) {
+  @media(min-width: 767px) {
+    padding: 0 16px;
 
     .header-logo {
-      width: 90px;
+      margin-top: 4px;
+      background-color: #E8E8EC;
     }
 
     .hamburger-menu {
+      background-color: #E8E8EC;
       display: inline;
-      font-size: 32px;
+      font-size: 20px;
     }
   }
 `
@@ -62,7 +67,7 @@ export const CategoryList = styled.ul`
 `
 
 export const CategoryItem = styled.li`
-  background-color: #C1C2CB;
+  background-color: #D2D2D9;
 
   cursor: pointer;
   margin: 0 12px;

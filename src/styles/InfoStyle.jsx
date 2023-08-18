@@ -12,20 +12,22 @@ export const InfoSection = styled.section`
   
   @media (max-width: 767px) {
     background-color: #F6F6F9;
-    padding: 40px 0;
-    max-width: 735px;
+    padding: 80px 0;
+    margin: 0 16px;
+    position: relative;
+    height: 760px;
   }
 `
 
 export const InfoTitle = styled.h2`
-  background-color: #E1E1E5;
+  background-color: #E8E8EC;
 
   font-size: 16px;
   font-weight: 600;
 `
 
 export const InfoHeaderDiv = styled.div`
-  background-color: #E1E1E5;
+  background-color: #E8E8EC;
 
   @media(max-width: 1024px) {
     padding: 28px 0 0 80px;
@@ -33,12 +35,11 @@ export const InfoHeaderDiv = styled.div`
   
   @media(max-width: 767px) {
     padding: 0;
+    padding-top: 10px;
   }
 `
 
 export const InfoHeaderText = styled.p`
-  background-color: #C1C2CB;
-
   margin: 0;
   font-size: 28px;
   font-weight: 600;
@@ -47,30 +48,32 @@ export const InfoHeaderText = styled.p`
   @media(max-width: 767px) {
     font-size: 20px;
     line-height: 30px;
-    background-color: #E1E1E5;
+    background-color: #E8E8EC;
   }
 `
 
 export const InfoCardDiv = styled.div`
-  background-color: #E1E1E5;
+  background-color: #E8E8EC;
 
-  margin-top: 50px;
+  margin-top: 60px;
   padding: 28px 0 0 80px;
   display: flex;
   position: relative;
 
   @media (max-width:767px) {
     padding: 0;
+    flex-direction: column;
+    width: 100%;
   }
 `
 
 export const InfoCard = styled.div`
-  background-color: #C1C2CB;
+  background-color: #D2D2D9;
 
   /* background-color: #F6F6F9; */
   width: 400px;
   height: 222px;
-  padding: 28px;
+  padding: 24px;
   border-radius: 18px;
 
   .partner-logo {
@@ -80,8 +83,9 @@ export const InfoCard = styled.div`
   }
 
   @media(max-width:767px){
-    width: 100%;
-    height: 209px;
+    position: absolute;
+    width: calc(100% - 48px);
+    height: 180px;
   }
 `
 
@@ -93,10 +97,20 @@ export const PartersLogo = styled.div`
     font-size: 36px;
     padding-left: 22px;
   }
+
+  @media(max-width: 767px) {
+    float: left;
+
+    .partners {
+      padding-left: 0;
+      padding-right: 22px;
+      font-size: 32px;
+    }
+  }
 `
 
 export const InfoCardR = styled(InfoCard)`
-  background-color: #C1C2CB;
+  background-color: #D2D2D9;
 
   /* background-color: #E7EBFA; */
   height: 284px;
@@ -109,12 +123,10 @@ export const InfoCardR = styled(InfoCard)`
   }
   
   @media(max-width:767px){
-    position: absolute;
-
-    /* width: 100%; */
-    /* height: 209px; */
-    top:320px;
+    top: 252px;
     left: 0;
+    width: calc(100% - 48px);
+    height: 236px;
   }
 `
 
@@ -136,6 +148,28 @@ export const PartersLogoR = styled(PartersLogo)`
     padding-left: 20px;
     padding-bottom: 16px;
   }
+
+  @media(max-width: 767px) {
+    width: 280px;
+  
+    .partners {
+      padding: 0 32px 16px 0;
+    }
+
+    .b1 {
+      padding-right: 12px;
+    }
+
+    .b {
+      padding-right: 32px;
+      font-size: 32px;
+    }
+
+    .rec {
+      width: 76px;
+      padding: 0 8px 16px 0;
+    }
+  }
 `
 
 export const InfoCardTitle = styled(InfoTitle)`
@@ -143,6 +177,10 @@ export const InfoCardTitle = styled(InfoTitle)`
 
   margin: 0;
   padding-bottom: 20px;
+
+  @media(max-width: 767px) {
+    font-size: 12px;
+  }
 `
 
 export const InfoCardText = styled(InfoHeaderText)`
@@ -151,6 +189,11 @@ export const InfoCardText = styled(InfoHeaderText)`
   font-size: 22px;
   line-height: 36px;
   padding-bottom: 28px;
+
+  @media(max-width: 767px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
 `
 
 // 법인회원 section
@@ -158,15 +201,41 @@ export const CorpSection = styled(InfoSection)`
   height: auto;
 `
 
+export const ButtonDiv = styled.div`
+  background-color: #D2D2D9;
+
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+
+  @media(max-width: 767px) {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+`
+
 export const HelpText = styled(InfoHeaderText)`
   font-size: 22px;
   line-height: 36px;
+
+  @media(max-width: 767px) {
+    font-size: 16px;
+    line-height: 26px;
+    width: 310px;
+  }
 `
 
 export const HelpButton = styled(CoverButton)`
   width: 107px;
   margin-top: 0;
   margin-right: 30px;
+
+  @media(max-width: 767px) {
+    display: block;
+    bottom: 10px;
+    width: 100%;
+    margin: 32px 0 0 0;
+  }
 `
 export const DownloadFileText = styled.p`
   color: #fff;
@@ -176,12 +245,4 @@ export const DownloadFileText = styled.p`
   font-weight: 600;
   margin: 0;
   cursor: pointer;
-`
-
-export const ButtonDiv = styled.div`
-  background-color: #C1C2CB;
-
-  display: flex;
-  align-items: center;
-  margin-top: 32px;
 `
