@@ -12,40 +12,29 @@ function Footer() {
         <fo.FooterSection>
         <fo.FooterContainer>
           <fo.AddressDiv>
+            <fo.AddressArticle>
             <fo.AddressHeader>
               언론보도
             </fo.AddressHeader>
             <fo.Address>
               press@ziktu.com
             </fo.Address>
+            </fo.AddressArticle>
             <fo.Line>
               |
             </fo.Line>
+            <fo.AddressArticle>
             <fo.AddressHeader>
               대표문의
             </fo.AddressHeader>
             <fo.Address>
               contact@ziktu.com
             </fo.Address>
+            </fo.AddressArticle>
           </fo.AddressDiv>
           <fo.Copyright>
               ⓒ 2023. ziktu Inc. All rights reserved.
           </fo.Copyright>
-
-          <fo.SocialLogoDiv>
-            <a href='https://www.facebook.com/bitstoa/' target='_blank' rel="noreferrer">
-              <BsFacebook className='sns-logo' />
-            </a>
-            <a href='https://t.me/bitstoa_com' target='_blank' rel="noreferrer">
-              <BsTelegram className='sns-logo'  />
-            </a>
-            <a href='https://www.youtube.com/channel/UCQEnD0zSF3ui9Tle_EwRMBQ/about' target='_blank' rel="noreferrer">
-              <BsYoutube className='sns-logo' />
-            </a>
-            <a href='https://blog.naver.com/hackersholdings' target='_blank' rel="noreferrer">
-              <img src={blog} className='sns-logo' alt='네이버 블로그 로고'></img>
-            </a>
-          </fo.SocialLogoDiv>
 
           <fo.ArticleDiv>
             <a href='http://hackers.iwinv.net/privacy_policy.html' target="_blank" rel="noreferrer">
@@ -58,24 +47,38 @@ function Footer() {
               서비스이용약관
             </a>
           </fo.ArticleDiv>
-          
+
           <fo.CompanyInfoDiv>
             <fo.CompanyHeader>
               직투코리아
             </fo.CompanyHeader>
-            <fo.ArticleText>
-              사업자 등록번호 369-88-01323
-            </fo.ArticleText>
-            <fo.ArticleText>
-              |
-            </fo.ArticleText>
-            <fo.ArticleText>
-            대표 : 김로이
-            </fo.ArticleText>
-            <br/>
+            <fo.ArticleDiv className='business-info'>
+              <fo.ArticleText>
+                사업자 등록번호 369-88-01323
+              </fo.ArticleText>
+              <fo.ArticleLine></fo.ArticleLine>
+              <fo.ArticleText>
+                대표 : 김로이
+              </fo.ArticleText>
+            </fo.ArticleDiv>
             <fo.Address>
-              서울시 영등포구 의사당대로 82, 하나금융투자빌딩 11층 (07321)
+              서울시 영등포구 의사당대로 82, 하나금융투자빌딩 11층
             </fo.Address>
+
+            <fo.SocialLogoDiv>
+              <a href='https://www.facebook.com/bitstoa/' target='_blank' rel="noreferrer">
+                <BsFacebook className='sns-logo' />
+              </a>
+              <a href='https://t.me/bitstoa_com' target='_blank' rel="noreferrer">
+                <BsTelegram className='sns-logo'  />
+              </a>
+              <a href='https://www.youtube.com/channel/UCQEnD0zSF3ui9Tle_EwRMBQ/about' target='_blank' rel="noreferrer">
+                <BsYoutube className='sns-logo' />
+              </a>
+              <a href='https://blog.naver.com/hackersholdings' target='_blank' rel="noreferrer">
+                <img src={blog} className='sns-logo' alt='네이버 블로그 로고'></img>
+              </a>
+            </fo.SocialLogoDiv>
             
             <fo.LogoContainer>
               <fo.LogoDiv>
@@ -86,7 +89,7 @@ function Footer() {
                 </fo.ArticleText>
               </fo.LogoDiv>
               <fo.LastLine></fo.LastLine>
-              <fo.LogoDiv>
+              <fo.LogoDiv className='sw-area'>
                 <img src={sw} className='footer-logo' alt='sw 로고'></img>
                 <fo.ArticleText>
                   개인정보보호배상책임공제<br/>

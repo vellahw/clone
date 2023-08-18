@@ -8,13 +8,14 @@ export const FooterSection = styled(NewsSection)`
 
     @media(max-width: 767px) {
         margin-top: 0;
+        font-size: 14px;
     }
 `
 
 export const FooterContainer = styled(InfoSection)`
     height: 100%;
     position: relative;
-    padding: 40px 0 80px 0;
+    padding: 40px 0 100px 0;
 `
 
 export const AddressDiv = styled.div`
@@ -25,6 +26,17 @@ export const AddressDiv = styled.div`
     padding-top: 6px;
     font-weight: 600;
     margin-bottom: 10px;
+
+    @media(max-width: 767px) {
+        padding-top: 0;
+        flex-direction: column;
+    }
+`
+
+export const AddressArticle = styled.address`
+    @media(max-width: 767px) {
+        margin-top: 3px;
+    }
 `
 
 export const AddressHeader = styled.span`
@@ -41,6 +53,10 @@ export const Address = styled.address`
 export const Line = styled.span`
     margin-right: 12px;
     font-weight: 300;
+
+    @media(max-width: 767px) {
+        display: none;
+    }
 `
 
 export const Copyright = styled.p`
@@ -67,6 +83,11 @@ export const SocialLogoDiv = styled.div`
         margin-left: 14px;
         cursor: pointer;
     }
+
+    @media(max-width: 767px) {
+        position: static;
+        margin-top: 40px;
+    }
 `
 
 export const ArticleDiv = styled.div`
@@ -74,13 +95,40 @@ export const ArticleDiv = styled.div`
 
     color: #414551;
     font-weight: 600;
-    padding-top: 18px;
+    padding-top: 20px;
+
+    .business-info{
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+
+        @media(max-width: 767px) {
+            flex-direction: column;
+            align-items: start;
+            margin-bottom: 4px;
+        }
+    }
 `
 
 export const ArticleText = styled.span`
     margin-right: 12px;
     font-weight: normal;
     color: #414551;
+
+    @media(max-width: 767px) {
+        padding-bottom: 3px;
+    }
+`
+
+export const ArticleLine = styled.div`
+    background-color: #BABBC3;
+    width: 1px;
+    height: 13px;
+    margin-right: 12px;
+
+    @media(max-width: 767px) {
+        display: none;
+    }
 `
 
 export const CompanyInfoDiv = styled(ArticleDiv)`
@@ -94,6 +142,14 @@ export const CompanyHeader = styled.p`
 export const LogoContainer = styled.div`
     margin-top: 48px;
     display: flex;
+
+    @media(max-width: 767px) {
+        flex-direction: column;
+
+        .sw-area {
+            margin-left: 11px;
+        }
+    }
 `
 
 export const LogoDiv = styled.div`
@@ -103,6 +159,11 @@ export const LogoDiv = styled.div`
 
     .footer-logo {
         margin-right: 16px;
+    }
+
+    @media(max-width: 767px) {
+        font-size: 12px;
+        margin-top: 16px;
     }
 `
 
@@ -114,4 +175,8 @@ export const LastLine = styled.span`
     margin-bottom: auto;
     margin-right: 24px;
     margin-left: 12px;
+
+    @media(max-width: 767px) {
+        display: none;
+    }
 `
