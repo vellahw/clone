@@ -3,7 +3,6 @@ import {HeaderButton} from './TopBannerStyle';
 
 
 export const InfoSection = styled.section`
-  background-color: #F6F6F9;
   height: 690px;
   max-width: 1024px;
   margin: 0 auto;
@@ -13,7 +12,6 @@ export const InfoSection = styled.section`
   overflow-x: hidden;
 
   @media (max-width: 767px) {
-    background-color: #F6F6F9;
     padding: 80px 0;
     margin: 0 16px;
     position: relative;
@@ -22,14 +20,11 @@ export const InfoSection = styled.section`
 `
 
 export const InfoTitle = styled.h2`
-  background-color: #E8E8EC;
-
   font-size: 16px;
   font-weight: 600;
 `
 
 export const InfoHeaderWrapper = styled.div`
-  background-color: #E8E8EC;
   margin: 25px 0 0 80px;
 
   @media(max-width: 1024px) {
@@ -52,13 +47,10 @@ export const InfoHeader = styled.p`
   @media(max-width: 767px) {
     font-size: 20px;
     line-height: 30px;
-    background-color: #E8E8EC;
   }
 `
 
 export const InfoCardDiv = styled.div`
-  background-color: #E8E8EC;
-
   margin-top: 60px;
   padding: 28px 0 0 80px;
   display: flex;
@@ -72,18 +64,16 @@ export const InfoCardDiv = styled.div`
 `
 
 export const InfoCard = styled.div`
-  background-color: #D2D2D9;
-
-  /* background-color: #F6F6F9; */
-  width: 400px;
+  background-color: #F6F6F9;
+  width: 390px;
   height: auto;
-  padding: 24px;
+  padding: 32px;
   border-radius: 18px;
 
   .partner-logo {
     width: 280px;
     float: right;
-    margin-top: 24px;
+    margin-top: 32px;
   }
 
   @media(max-width:767px){
@@ -94,8 +84,6 @@ export const InfoCard = styled.div`
 `
 
 export const PartersLogo = styled.div`
-  background-color: #BABBC3;
-
   width: 100%;
   color: #fff;
 
@@ -103,8 +91,6 @@ export const PartersLogo = styled.div`
     font-size: 36px;
     padding: 0 0 15px 22px;
     float: right;
-
-    background-color: #BABBC3;
   }
 
   @media(max-width: 767px) {
@@ -120,13 +106,11 @@ export const PartersLogo = styled.div`
 `
 
 export const InfoCardR = styled(InfoCard)`
-  background-color: #D2D2D9;
-
-  /* background-color: #E7EBFA; */
+  background-color: #E7EBFA;
   height: auto;
   position: absolute;
   top: 70px;
-  left: 568px;
+  left: 558px;
 
   .partner-logo {
     width: 244px;
@@ -192,11 +176,8 @@ export const PartersLogoR = styled(PartersLogo)`
 `
 
 export const InfoCardTitle = styled(InfoTitle)`
-  background-color: #BABBC3;
-
   margin: 0;
-  margin-bottom: 20px;
-  /* padding-bottom: 20px; */
+  margin-bottom: 24px;
 
   @media(max-width: 767px) {
     font-size: 12px;
@@ -204,11 +185,8 @@ export const InfoCardTitle = styled(InfoTitle)`
 `
 
 export const InfoCardText = styled(InfoHeader)`
-  background-color: #BABBC3;
-
   font-size: 22px;
   line-height: 36px;
-  margin-bottom: 28px;
 
   @media(max-width: 767px) {
     font-size: 16px;

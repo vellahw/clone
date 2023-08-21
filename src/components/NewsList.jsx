@@ -1,7 +1,6 @@
 import React from 'react';
 import {IoIosArrowForward} from 'react-icons/io';
 import * as ns from '../styles/NewsListStyle';
-import * as i from '../styles/InfoStyle';
 
 function NewsList() {
     const news = [

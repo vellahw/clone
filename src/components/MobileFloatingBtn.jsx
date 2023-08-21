@@ -20,7 +20,6 @@ const ButtonWrapper = styled.div`
         width: 100vw;
         max-width:100%;
 
-        background-color: #E8E8EC;
         position: fixed;
         z-index: 999;
         bottom: 24px;

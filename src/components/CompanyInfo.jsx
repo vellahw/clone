@@ -3,15 +3,18 @@ import logoPartner2 from '../image/logo/logo-partner2.png';
 import Rectangle from '../image/logo/Rectangle.svg';
 import {FaCircle} from 'react-icons/fa';
 import * as i from '../styles/InfoStyle';
+import { useScroll } from '../hooks/useScroll'
 
 export function CompanyInfo(){
-    const logoLoop = (length) => {
-        const newArr = [];
-        for (let i = 1; i <= length; i++) {
-          newArr.push(<FaCircle className='partners'/>);
-        }
-        return newArr;
-      };
+    // const logoLoop = (length) => {
+    //     const newArr = [];
+    //     for (let i = 1; i <= length; i++) {
+    //       newArr.push(<FaCircle className='partners'/>);
+    //     }
+    //     return newArr;
+    //   };
+
+    const animatedItem = useScroll();
 
     return (
         <i.InfoSection>
@@ -24,7 +27,7 @@ export function CompanyInfo(){
                 </i.InfoHeader>
             </i.InfoHeaderWrapper>
             <i.InfoCardDiv>
-                <i.InfoCard>
+                <i.InfoCard >
                     <i.InfoCardTitle>안심하세요</i.InfoCardTitle>
                     <i.InfoCardText>
                         고객님의 모든 소중한 자산은<br/>
@@ -33,10 +36,10 @@ export function CompanyInfo(){
                     </i.InfoCardText>
 
                     <i.PartersLogo>
-                        { logoLoop(5) }
+                        {/* { logoLoop(5) } */}
+                    <img src={logoPartner1} className='partner-logo' alt='파트너 로고1'></img>
                     </i.PartersLogo>
 
-                    {/* <img src={logoPartner1} className='partner-logo' alt='파트너 로고1'></img> */}
                 </i.InfoCard>
                 <i.InfoCardR>
                     <i.InfoCardTitle>기대하세요</i.InfoCardTitle>
@@ -47,13 +50,13 @@ export function CompanyInfo(){
                     </i.InfoCardText>
 
                     <i.PartersLogoR>
-                        { logoLoop(4) }
-                        <FaCircle className='partners b1' />
+                        <img src={logoPartner2} className='partner-logo' alt='파트너 로고2'></img>
+                        {/* { logoLoop(4) } */}
+                        {/* <FaCircle className='partners b1' />
                         <img src={Rectangle} alt="가로로고" className='rec'/>
                         <FaCircle className='partners b2' />
-                        <FaCircle className='partners b3' />
+                        <FaCircle className='partners b3' /> */}
                     </i.PartersLogoR>
-                    {/* <img src={logoPartner2} className='partner-logo' alt='파트너 로고2'></img> */}
                 </i.InfoCardR>
             </i.InfoCardDiv>
         </i.InfoSection>

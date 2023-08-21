@@ -3,9 +3,16 @@ import styled from 'styled-components';
 export const TopBannerSection = styled.section`
   height: 100vh;
   position: relative;
+  overflow: hidden;
 
   .slider {
     height: 100vh;
+    width: 100%;
+  }
+  
+  .cover-img {
+    height: 100vh;
+    object-fit: cover;
   }
 
   @media (max-width:767px) {
@@ -16,6 +23,7 @@ export const TopBannerSection = styled.section`
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
   }
 `
 
@@ -31,8 +39,9 @@ export const HeaderContainer = styled.div`
 
   @media (max-width: 767px) {
     width: 100%;
+    left: 0;
     position: absolute;
-    /* top: 340px; */
+    background-color: palegreen;
   }
 `
 
@@ -61,7 +70,6 @@ export const Header = styled.h1`
 `
 
 export const HeaderTextContainer = styled.div`
-
   font-size: 22px;
   font-weight: 600;
   margin-top: 18px;

@@ -1,11 +1,9 @@
 import * as b from '../styles/BannerSectionStyle';
-import * as i from '../styles/InfoStyle';
 
 function BottomBanner() {
     return (
         <b.BottomBannerSection>
             <b.BottomBannerContainer>
-                {/* <i.InfoSection> */}
                 <b.ImgContainer>
                     <b.BottomBannerImg>
                     </b.BottomBannerImg>
@@ -21,7 +19,6 @@ function BottomBanner() {
                     </b.BottomBannerInfo>
                 </b.BottomBannerHeaderDiv>
             </b.BottomBannerContainer>    
-            {/* </i.InfoSection> */}
         </b.BottomBannerSection>
     )
 }

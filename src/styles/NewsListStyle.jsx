@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {InfoHeaderWrapper, InfoSection, InfoTitle, InfoHeader} from './InfoStyle'; 
+import {InfoSection, InfoTitle, InfoHeader} from './InfoStyle'; 
 
 export const NewsSection = styled.section`
     background-color: #F6F6F9;

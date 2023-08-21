@@ -32,6 +32,7 @@ export const NavigationContainer = styled.div`
   .header-logo {
     width: 80px;
     padding: 17px;
+    padding-left: 0;
 
     @media(min-width: 767px) {
       margin-top: 4px;
@@ -48,14 +49,14 @@ export const HamburgerWrapper = styled.div`
   display: none;
   font-size: 20px;
 
-  @media(max-width: 767px) {
+  @media(max-width: 782px) {
     display: block;
   }
 `
 
 export const CategoryWrapper = styled.div`
 
-  @media (max-width: 767px) {
+  @media (max-width: 782px) {
     display: none;
   }
 `
