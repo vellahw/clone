@@ -38,19 +38,17 @@ export const BannerHeader = styled.h1`
 `
 
 export const BottomBannerSection = styled.section`
-  background-color: #F6F6F9;
+  background-color: #627AF5;
   height: 540px;
 
   @media(max-width: 767px) {
     height: 1000px;
   }
   
-  /* background-color: #627AF5; */
 `
 
 export const BottomBannerContainer = styled.div`
   position: relative;
-  background-color: #E8E8EC;
   max-width: 1300px;
   margin: 0 auto;
   height: 100%;
@@ -75,7 +73,6 @@ export const BottomBannerImg = styled.div`
 `
 
 export const BottomBannerHeaderDiv = styled.div`
-  background-color: #D2D2D9;
   padding-top: 136px;
   width: 1024px;
   margin: 0 auto;
@@ -89,9 +86,9 @@ export const BottomBannerHeaderDiv = styled.div`
 `
 
 export const BottomBannerHeader = styled.h1`
-  background-color: #BABBC3;
   margin: 0;
   font-size: 54px;
+  color: #fff;
 
   @media(max-width: 767px) {
     font-size: 28px;
@@ -100,8 +97,8 @@ export const BottomBannerHeader = styled.h1`
 
 export const BottomBannerButton = styled.button`
   border: none;
-  background-color: #627AF5;
-  color: #fff;
+  background-color: #fff;
+  color: #627AF5;
   font-size: 20px;
   font-weight: 600;
   width: 200px;
@@ -115,9 +112,7 @@ export const BottomBannerButton = styled.button`
 `
 
 export const BottomBannerInfo = styled.p`
-  background-color: #BABBC3;
-
-  color: #fff;
+  color: #c1c1c1;
   font-size: 12px;
   padding: 28px 0 0 4px;
 

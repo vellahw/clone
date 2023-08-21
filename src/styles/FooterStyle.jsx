@@ -13,8 +13,6 @@ export const FooterSection = styled(NewsSection)`
 `
 
 export const FooterContainer = styled(InfoSection)`
-    background-color: #E8E8EC;
-
     height: 100%;
     position: relative;
     padding: 40px 0 80px 0;
@@ -25,8 +23,6 @@ export const FooterContainer = styled(InfoSection)`
 `
 
 export const AddressDiv = styled.div`
-    background-color: #D2D2D9;
-
     display: flex;
     color: #414551;
     padding-top: 6px;
@@ -40,8 +36,6 @@ export const AddressDiv = styled.div`
 `
 
 export const AddressArticle = styled.address`
-    background-color: #BABBC3;
-
     @media(max-width: 767px) {
         margin-top: 3px;
     }
@@ -52,8 +46,6 @@ export const AddressHeader = styled.span`
 `
 
 export const Address = styled.address`
-    background-color: #BABBC3;
-
     margin-right: 12px;
     font-weight: normal;
     color: #414551;
@@ -70,8 +62,6 @@ export const Line = styled.span`
 `
 
 export const Copyright = styled.p`
-    background-color: #D2D2D9;
-
     font-weight: normal;
     color: #414551;
     margin-top: 10px;
@@ -79,8 +69,6 @@ export const Copyright = styled.p`
 `
 
 export const SocialLogoDiv = styled.div`
-    background-color: #D2D2D9;
-
     display: flex;
     position: absolute;
     right: 0;
@@ -103,15 +91,11 @@ export const SocialLogoDiv = styled.div`
 `
 
 export const ArticleDiv = styled.div`
-    background-color: #D2D2D9;
-
     color: #414551;
     font-weight: 600;
     padding-top: 20px;
 
     .business-info{
-        background-color: #BABBC3;
-
         display: flex;
         align-items: center;
         padding-top: 0;
@@ -135,7 +119,6 @@ export const ArticleText = styled.span`
 `
 
 export const ArticleLine = styled.div`
-    background-color: #BABBC3;
     width: 1px;
     height: 13px;
     margin-right: 12px;
@@ -150,13 +133,9 @@ export const CompanyInfoDiv = styled(ArticleDiv)`
 `
 
 export const CompanyHeader = styled.p`
-    background-color: #BABBC3;
-
     margin-bottom: 5px;
 `
 export const LogoContainer = styled.div`
-    background-color: #BABBC3;
-
     margin-top: 48px;
     display: flex;
 

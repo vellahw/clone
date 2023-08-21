@@ -200,8 +200,6 @@ export const CorpSection = styled(InfoSection)`
 `
 
 export const ButtonDiv = styled.div`
-  background-color: #D2D2D9;
-
   display: flex;
   align-items: center;
   margin-top: 32px;
@@ -213,8 +211,6 @@ export const ButtonDiv = styled.div`
 `
 
 export const HelpText = styled(InfoHeader)`
-  background-color: #D2D2D9;
-
   font-size: 22px;
   line-height: 36px;
 

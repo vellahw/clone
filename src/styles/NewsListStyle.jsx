@@ -7,7 +7,6 @@ export const NewsSection = styled.section`
 `
 
 export const NewsWrapper = styled(InfoSection)`
-    background-color: #E8E8EC;
     height: auto;
     padding-top: 28px;
 
@@ -16,11 +15,9 @@ export const NewsWrapper = styled(InfoSection)`
     }
 `
 export const SectionTitle = styled(InfoTitle)`
-    background-color: #D2D2D9;
     
 `
 export const NewsContainer = styled.div`
-    background-color: #D2D2D9;
     margin-top: 44px;
     margin-left: 90px;
     
@@ -35,11 +32,9 @@ export const NewsHeaderDiv = styled.div`
 `
 
 export const NewsHeader = styled(InfoHeader)`
-    background-color: #BABBC3;
 `
 
 export const ViewAllTextDiv = styled.div`
-    background-color: #BABBC3;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -69,8 +64,6 @@ export const NewsList = styled.ul`
 `
 
 export const NewsItem = styled.li`
-    background-color: #BABBC3;
-
     /* padding-left: 40px; */
     /* margin: 14px 0 40px 40px; */
     cursor: pointer;
