@@ -7,7 +7,7 @@ export const Navigation = styled.nav`
   position: fixed;
   z-index: 999;
   display: flex;
-  background-color: #F6F6F9;
+  color: #fff;
 
   @media (max-width: 767px) {
     width: 100vw;
@@ -19,7 +19,6 @@ export const Navigation = styled.nav`
 `
 
 export const NavigationContainer = styled.div`
-  background-color: #E8E8EC;
   padding: 0 16px;
   
   width: 100%;
@@ -32,25 +31,21 @@ export const NavigationContainer = styled.div`
 
   .header-logo {
     width: 80px;
-    background-color: #D2D2D9;
     padding: 17px;
 
     @media(min-width: 767px) {
       margin-top: 4px;
-      background-color: #D2D2D9;
     }
   }
 
   @media(min-width: 767px) {
     .hamburger-menu {
-      background-color: #D2D2D9;
       font-size: 20px;
     }
   }
 `
 export const HamburgerWrapper = styled.div`
   display: none;
-  background-color: #D2D2D9;
   font-size: 20px;
 
   @media(max-width: 767px) {
@@ -59,7 +54,6 @@ export const HamburgerWrapper = styled.div`
 `
 
 export const CategoryWrapper = styled.div`
-  background-color: #D2D2D9;
 
   @media (max-width: 767px) {
     display: none;
@@ -81,7 +75,6 @@ export const CategoryList = styled.ul`
 `
 
 export const CategoryItem = styled.li`
-  background-color: #BABBC3;
 
   cursor: pointer;
   /* margin: 0 12px; */

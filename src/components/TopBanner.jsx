@@ -1,7 +1,8 @@
 import React from 'react';
-import cover1 from '../image/cover1.jpg';
-import cover2 from '../image/cover2.jpg';
-import cover3 from '../image/cover3.jpg';
+import cover1 from '../image/cover1.png';
+import cover2 from '../image/cover2.png';
+import cover3 from '../image/cover3.png';
+import cover4 from '../image/cover4.png';
 import * as c from '../styles/TopBannerStyle';
 import {Carousel} from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -24,7 +25,7 @@ function TopBanner(){
                 </c.HeaderWrapper>
             </c.HeaderContainer>
 
-            {/* <Carousel
+            <Carousel className='slider'
                 showArrows={false}
                 centerMode={false}
                 showThumbs={false}
@@ -37,7 +38,8 @@ function TopBanner(){
                 <img src={cover1} className='cover-img' alt='커버 이미지'></img>
                 <img src={cover2} className='cover-img' alt='커버 이미지'></img>
                 <img src={cover3} className='cover-img' alt='커버 이미지'></img>
-            </Carousel> */}
+                <img src={cover4} className='cover-img' alt='커버 이미지'></img>
+            </Carousel>
         </c.TopBannerSection>
     )
 }

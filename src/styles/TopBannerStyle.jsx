@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
 export const TopBannerSection = styled.section`
-  background-color: #F6F6F9;
   height: 100vh;
+  position: relative;
+
+  .slider {
+    height: 100vh;
+  }
 
   @media (max-width:767px) {
     width: 100vw;
@@ -16,16 +20,14 @@ export const TopBannerSection = styled.section`
 `
 
 export const HeaderContainer = styled.div`
-  /* @media (min-width: 1024px) { */
-    background-color: #E8E8EC;
-    
-    max-width: 1024px;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  /* } */
+  position: absolute;
+  left: 24%;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @media (max-width: 767px) {
     width: 100%;
@@ -35,8 +37,6 @@ export const HeaderContainer = styled.div`
 `
 
 export const HeaderWrapper = styled.div`
-  background-color: #D2D2D9;
-
   color: #fff;
   z-index: 1;
   display: flex;
@@ -45,26 +45,22 @@ export const HeaderWrapper = styled.div`
   
   @media (max-width: 767px) {
     align-items: center;
-    background-color: #E8E8EC;
     text-align: center;
   }
 `
 
 export const Header = styled.h1`
-  background-color: #BABBC3;
 
   font-size: 54px;
   margin: 0;
 
   @media (max-width: 767px) {
-    background-color: #D2D2D9;
 
     font-size: 28px;
   }
 `
 
 export const HeaderTextContainer = styled.div`
-  background-color: #BABBC3;
 
   font-size: 22px;
   font-weight: 600;
@@ -75,7 +71,6 @@ export const HeaderTextContainer = styled.div`
   }
 
   @media (max-width: 767px) {
-    background-color: #D2D2D9;
     
     width: 200px;
     font-size: 16px;
