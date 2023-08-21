@@ -37,8 +37,6 @@ export const Navigation = styled.nav`
   @media (max-width: 767px) {
     width: 100vw;
     max-width:100%;
-    height: 56px;
-    overflow-x: hidden;
  }
 `
 

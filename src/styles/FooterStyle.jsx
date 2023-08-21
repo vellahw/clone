@@ -83,8 +83,6 @@ export const SocialLogoDiv = styled.div`
     }
 
     @media(max-width: 767px) {
-        background-color: #BABBC3;
-
         position: static;
         margin-top: 40px;
     }

@@ -41,7 +41,6 @@ export const HeaderContainer = styled.div`
     width: 100%;
     left: 0;
     position: absolute;
-    background-color: palegreen;
   }
 `
 
