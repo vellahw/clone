@@ -234,9 +234,7 @@ export const HelpButton = styled(HeaderButton)`
   }
 `
 export const DownloadFileText = styled.p`
-  color: #fff;
-
-  /* color: #A1A0A8; */
+  color: #A1A0A8;
   text-decoration: underline;
   font-weight: 600;
   margin: 0;
