@@ -18,7 +18,7 @@ export const Navigation = styled.nav`
  }
 `
 
-export const NavigationWrap = styled.div`
+export const NavigationContainer = styled.div`
   background-color: #E8E8EC;
   padding: 0 16px;
   
@@ -33,6 +33,7 @@ export const NavigationWrap = styled.div`
   .header-logo {
     width: 80px;
     background-color: #D2D2D9;
+    padding: 17px;
 
     @media(min-width: 767px) {
       margin-top: 4px;
@@ -47,7 +48,7 @@ export const NavigationWrap = styled.div`
     }
   }
 `
-export const HamburgerDiv = styled.div`
+export const HamburgerWrapper = styled.div`
   display: none;
   background-color: #D2D2D9;
   font-size: 20px;
@@ -57,7 +58,7 @@ export const HamburgerDiv = styled.div`
   }
 `
 
-export const CategoryDiv = styled.div`
+export const CategoryWrapper = styled.div`
   background-color: #D2D2D9;
 
   @media (max-width: 767px) {
@@ -69,13 +70,22 @@ export const CategoryList = styled.ul`
   display: flex;
   align-items: center;
   font-size: 16px;
+
+  margin: 0;
+  padding: 0;
+
+  .download-btn {
+    padding: 0;
+    margin: 0;
+  }
 `
 
 export const CategoryItem = styled.li`
   background-color: #BABBC3;
 
   cursor: pointer;
-  margin: 0 12px;
+  /* margin: 0 12px; */
+  padding: 20px;
 `
 
 export const AppDownloadBtn = styled.button`

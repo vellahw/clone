@@ -21,10 +21,10 @@ function FlatformInfo() {
     return (
         <f.FlatformSection>
             <i.InfoTitle>플랫폼 소개</i.InfoTitle>
-            <i.InfoHeaderDiv>
-                <i.InfoHeaderText>상업용 부동산 투자,</i.InfoHeaderText>
-                <i.InfoHeaderText>직투에서 누구나 쉽고 간편하게.</i.InfoHeaderText>
-            </i.InfoHeaderDiv>
+            <i.InfoHeaderWrapper>
+                <i.InfoHeader>상업용 부동산 투자,</i.InfoHeader>
+                <i.InfoHeader>직투에서 누구나 쉽고 간편하게.</i.InfoHeader>
+            </i.InfoHeaderWrapper>
             <f.FlatformInfoCardDiv>
                 { card.map(i=>{
                     return (

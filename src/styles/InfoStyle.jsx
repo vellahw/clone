@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {CoverButton} from './TopBannerStyle';
+import {HeaderButton} from './TopBannerStyle';
 
 
 export const InfoSection = styled.section`
@@ -28,8 +28,9 @@ export const InfoTitle = styled.h2`
   font-weight: 600;
 `
 
-export const InfoHeaderDiv = styled.div`
+export const InfoHeaderWrapper = styled.div`
   background-color: #E8E8EC;
+  margin: 25px 0 0 80px;
 
   @media(max-width: 1024px) {
     padding: 28px 0 0 80px;
@@ -37,11 +38,12 @@ export const InfoHeaderDiv = styled.div`
   
   @media(max-width: 767px) {
     padding: 0;
+    margin: 0;
     padding-top: 10px;
   }
 `
 
-export const InfoHeaderText = styled.p`
+export const InfoHeader = styled.p`
   margin: 0;
   font-size: 28px;
   font-weight: 600;
@@ -74,7 +76,7 @@ export const InfoCard = styled.div`
 
   /* background-color: #F6F6F9; */
   width: 400px;
-  height: 222px;
+  height: auto;
   padding: 24px;
   border-radius: 18px;
 
@@ -94,21 +96,25 @@ export const InfoCard = styled.div`
 export const PartersLogo = styled.div`
   background-color: #BABBC3;
 
+  width: 100%;
   color: #fff;
-  float: right;
 
   .partners {
     font-size: 36px;
-    padding-left: 22px;
+    padding: 0 0 15px 22px;
+    float: right;
+
+    background-color: #BABBC3;
   }
 
   @media(max-width: 767px) {
-    float: left;
+    float: none;
 
     .partners {
       padding-left: 0;
       padding-right: 22px;
       font-size: 32px;
+      float: none;
     }
   }
 `
@@ -117,13 +123,14 @@ export const InfoCardR = styled(InfoCard)`
   background-color: #D2D2D9;
 
   /* background-color: #E7EBFA; */
-  height: 284px;
+  height: auto;
   position: absolute;
   top: 70px;
   left: 568px;
 
   .partner-logo {
     width: 244px;
+    float: right;
   }
   
   @media(max-width:767px){
@@ -135,14 +142,16 @@ export const InfoCardR = styled(InfoCard)`
 `
 
 export const PartersLogoR = styled(PartersLogo)`
-  width: 84%;
+  width: 304px;
+  float: right;
 
   .partners {
+    float: none;
     padding-left: 40px;
     padding-bottom: 16px;
   }
   
-  .b {
+  .b2 {
     padding-left: 20px;
     font-size: 36px;
   }
@@ -154,24 +163,30 @@ export const PartersLogoR = styled(PartersLogo)`
   }
 
   @media(max-width: 767px) {
-    width: 280px;
+    width: 300px;
+    float: none;
   
     .partners {
-      padding: 0 32px 16px 0;
+      padding: 0 37px 16px 0;
+      float: none;
     }
 
     .b1 {
-      padding-right: 12px;
+      padding-right: 15px;
     }
 
-    .b {
-      padding-right: 32px;
+    .b2 {
+      padding-right: 37px;
       font-size: 32px;
     }
-
+    
+    .b3 {
+      padding-right: 12px;
+    }
+    
     .rec {
       width: 76px;
-      padding: 0 8px 16px 0;
+      padding: 0 15px 16px 0;
     }
   }
 `
@@ -180,19 +195,20 @@ export const InfoCardTitle = styled(InfoTitle)`
   background-color: #BABBC3;
 
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  /* padding-bottom: 20px; */
 
   @media(max-width: 767px) {
     font-size: 12px;
   }
 `
 
-export const InfoCardText = styled(InfoHeaderText)`
+export const InfoCardText = styled(InfoHeader)`
   background-color: #BABBC3;
 
   font-size: 22px;
   line-height: 36px;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
 
   @media(max-width: 767px) {
     font-size: 16px;
@@ -218,7 +234,7 @@ export const ButtonDiv = styled.div`
   }
 `
 
-export const HelpText = styled(InfoHeaderText)`
+export const HelpText = styled(InfoHeader)`
   background-color: #D2D2D9;
 
   font-size: 22px;
@@ -231,7 +247,7 @@ export const HelpText = styled(InfoHeaderText)`
   }
 `
 
-export const HelpButton = styled(CoverButton)`
+export const HelpButton = styled(HeaderButton)`
   width: 107px;
   margin-top: 0;
   margin-right: 30px;

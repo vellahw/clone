@@ -37,9 +37,9 @@ function NewsList() {
               <ns.NewsHeader>
                 보도자료
               </ns.NewsHeader>
-              {/* <i.InfoHeaderText>
+              {/* <i.InfoHeader>
                 보도자료
-              </i.InfoHeaderText> */}
+              </i.InfoHeader> */}
               <ns.ViewAllTextDiv>
                 <ns.ViewAllText>
                   전체보기

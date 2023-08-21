@@ -8,20 +8,20 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function TopBanner(){
     return(
-        <c.CoverSection>
+        <c.TopBannerSection>
             <c.HeaderContainer>
-                <c.CoverHeaderDiv>
-                    <c.CoverHeader>압구정 커머스빌딩</c.CoverHeader>
-                    <c.CoverHeaderTextDiv>
+                <c.HeaderWrapper>
+                    <c.Header>압구정 커머스빌딩</c.Header>
+                    <c.HeaderTextContainer>
                         <p className='text'>
                         부동산금융 명가 대신그룹의 노하우를 담은 첫 번째 건물
                         </p>
                         <p className='text'>
                         9월 6일 공모가 시작됩니다!
                         </p>
-                    </c.CoverHeaderTextDiv>
-                    <c.CoverButton>지금 시작하기</c.CoverButton>
-                </c.CoverHeaderDiv>
+                    </c.HeaderTextContainer>
+                    <c.HeaderButton>지금 시작하기</c.HeaderButton>
+                </c.HeaderWrapper>
             </c.HeaderContainer>
 
             {/* <Carousel
@@ -38,7 +38,7 @@ function TopBanner(){
                 <img src={cover2} className='cover-img' alt='커버 이미지'></img>
                 <img src={cover3} className='cover-img' alt='커버 이미지'></img>
             </Carousel> */}
-        </c.CoverSection>
+        </c.TopBannerSection>
     )
 }
 

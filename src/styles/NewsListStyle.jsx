@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {InfoHeaderDiv, InfoSection, InfoTitle, InfoHeaderText} from './InfoStyle'; 
+import {InfoHeaderWrapper, InfoSection, InfoTitle, InfoHeader} from './InfoStyle'; 
 
 export const NewsSection = styled.section`
     background-color: #F6F6F9;
@@ -8,7 +8,7 @@ export const NewsSection = styled.section`
 
 export const NewsWrapper = styled(InfoSection)`
     background-color: #E8E8EC;
-    height: 560px;
+    height: auto;
     padding-top: 28px;
 
     @media(max-width: 767px) {
@@ -34,7 +34,7 @@ export const NewsHeaderDiv = styled.div`
     justify-content: space-between;
 `
 
-export const NewsHeader = styled(InfoHeaderText)`
+export const NewsHeader = styled(InfoHeader)`
     background-color: #BABBC3;
 `
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CoverSection = styled.section`
+export const TopBannerSection = styled.section`
   background-color: #F6F6F9;
   height: 100vh;
 
@@ -34,7 +34,7 @@ export const HeaderContainer = styled.div`
   }
 `
 
-export const CoverHeaderDiv = styled.div`
+export const HeaderWrapper = styled.div`
   background-color: #D2D2D9;
 
   color: #fff;
@@ -50,7 +50,7 @@ export const CoverHeaderDiv = styled.div`
   }
 `
 
-export const CoverHeader = styled.h1`
+export const Header = styled.h1`
   background-color: #BABBC3;
 
   font-size: 54px;
@@ -63,7 +63,7 @@ export const CoverHeader = styled.h1`
   }
 `
 
-export const CoverHeaderTextDiv = styled.div`
+export const HeaderTextContainer = styled.div`
   background-color: #BABBC3;
 
   font-size: 22px;
@@ -83,7 +83,7 @@ export const CoverHeaderTextDiv = styled.div`
 
   }
 `
-export const CoverButton = styled.button`
+export const HeaderButton = styled.button`
   background-color: #627AF5;
   color: #fff;
   border: none;

@@ -62,6 +62,7 @@ export const BottomBannerContainer = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   height: 100%;
+  overflow-x: hidden;
 
   @media(max-width: 767px) {
     width: 100%;

@@ -16,13 +16,13 @@ export function CompanyInfo(){
     return (
         <i.InfoSection>
             <i.InfoTitle>회사 소개</i.InfoTitle>
-            <i.InfoHeaderDiv>
-                <i.InfoHeaderText>
+            <i.InfoHeaderWrapper>
+                <i.InfoHeader>
                     직투는 누구나 쉽게 부동산에 투자하고<br/>
                     그 권리를 사고 팔 수 있는<br/>
                     부동산 조각 투자 플랫폼입니다.<br/>
-                </i.InfoHeaderText>
-            </i.InfoHeaderDiv>
+                </i.InfoHeader>
+            </i.InfoHeaderWrapper>
             <i.InfoCardDiv>
                 <i.InfoCard>
                     <i.InfoCardTitle>안심하세요</i.InfoCardTitle>
@@ -49,9 +49,9 @@ export function CompanyInfo(){
                     <i.PartersLogoR>
                         { logoLoop(4) }
                         <FaCircle className='partners b1' />
-                        <img src={Rectangle} alt="" className='rec'/>
-                        <FaCircle className='partners b' />
-                        <FaCircle className='partners' />
+                        <img src={Rectangle} alt="가로로고" className='rec'/>
+                        <FaCircle className='partners b2' />
+                        <FaCircle className='partners b3' />
                     </i.PartersLogoR>
                     {/* <img src={logoPartner2} className='partner-logo' alt='파트너 로고2'></img> */}
                 </i.InfoCardR>
@@ -64,7 +64,7 @@ export function CorpInfo() {
     return (
         <i.CorpSection>
             <i.InfoTitle>법인 회원</i.InfoTitle>
-            <i.InfoHeaderDiv>
+            <i.InfoHeaderWrapper>
                 <i.HelpText>
                 법인회원으로 가입을 원하시는 경우, <br/>
                 법인 고객 상담팀(support@ziktu.com)으로 요청 주시면 도움 드리겠습니다.
@@ -75,7 +75,7 @@ export function CorpInfo() {
                     <i.DownloadFileText>법인 상품설명서 다운로드</i.DownloadFileText>
                     </a>
                 </i.ButtonDiv>
-            </i.InfoHeaderDiv>
+            </i.InfoHeaderWrapper>
       </i.CorpSection>
     )
 }
