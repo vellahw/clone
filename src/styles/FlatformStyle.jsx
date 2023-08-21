@@ -22,7 +22,7 @@ export const FlatformInfoCardDiv = styled(InfoCardDiv)`
 `
 
 export const FlatformInfoCard = styled(InfoCard)`
-    background-color: #D2D2D9;
+    background-color: #E7EBFA;
     overflow-y: hidden;
 
     width: 225px;
@@ -30,7 +30,6 @@ export const FlatformInfoCard = styled(InfoCard)`
     border-radius: 15px;
     padding: 30px;
     margin-right: 15px;
-    /* background-color: #E7EBFA; */
 
     @media(max-width: 767px) {
         position: relative;
@@ -42,8 +41,6 @@ export const FlatformInfoCard = styled(InfoCard)`
 `
 
 export const FlatformInfoCardText = styled(InfoCardText)`
-    background-color: #BABBC3;
-
     line-height: 34px;
     word-break: keep-all;
     width: 152px;
@@ -73,14 +70,16 @@ export const FlatformCardImg = styled.div`
 `
 
 export const FlatformInfoCardB = styled(InfoCardR)`
-    background-color: #D2D2D9;
-
-    /* background-color: #627AF5; */
+    background-color: #627AF5;
     border-radius: 15px;
     width: 229px;
     height: 206px;
     top: 600px;
     left: 80px;
+
+    .br-card-text {
+        color: #fff
+    }
 
     @media(max-width: 767px) {
         position: relative;
@@ -97,15 +96,17 @@ export const FlatformInfoCardTextB = styled(FlatformInfoCardText)`
 `  
 
 export const FlatformInfoCardBR = styled(InfoCardR)`
-    background-color: #D2D2D9;
+    background-color: #414551;
     overflow-y: hidden;
-
-    /* background-color: #414551; */
     border-radius: 15px;
     width: 529px;
     height: 206px;
     top: 600px;
     left: 380px;
+
+    .br-card-text {
+        color: #fff
+    }
 
     @media(max-width: 767px) {
         position: relative;

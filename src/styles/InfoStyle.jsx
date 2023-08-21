@@ -25,7 +25,7 @@ export const InfoTitle = styled.h2`
 `
 
 export const InfoHeaderWrapper = styled.div`
-  margin: 25px 0 0 80px;
+  margin: 38px 0 0 80px;
 
   @media(max-width: 1024px) {
     padding: 28px 0 0 80px;
@@ -51,7 +51,7 @@ export const InfoHeader = styled.p`
 `
 
 export const InfoCardDiv = styled.div`
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 28px 0 0 80px;
   display: flex;
   position: relative;

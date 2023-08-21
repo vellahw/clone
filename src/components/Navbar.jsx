@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect, useState} from 'react';
 import headerLogo from '../image/logo/ziktu-logo.png';
 import {AiOutlineMenu} from 'react-icons/ai';
 import * as n from '../styles/NavbarStyle';
@@ -23,7 +23,7 @@ function Navbar() {
                         <n.CategoryItem>이벤트</n.CategoryItem>
                         <n.CategoryItem>채용</n.CategoryItem>
                         <n.CategoryItem>FAQ</n.CategoryItem>
-                        <n.CategoryItem className='download-btn'>
+                        <n.CategoryItem>
                             <n.AppDownloadBtn>직투 앱 다운로드</n.AppDownloadBtn>
                         </n.CategoryItem>
                     </n.CategoryList>

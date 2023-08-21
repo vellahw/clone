@@ -3,7 +3,7 @@ import logoPartner2 from '../image/logo/logo-partner2.png';
 import Rectangle from '../image/logo/Rectangle.svg';
 import {FaCircle} from 'react-icons/fa';
 import * as i from '../styles/InfoStyle';
-import { useScroll } from '../hooks/useScroll'
+import { useScrollFadeIn } from '../hooks/useScrollFadeIn'
 
 export function CompanyInfo(){
     // const logoLoop = (length) => {
@@ -14,12 +14,14 @@ export function CompanyInfo(){
     //     return newArr;
     //   };
 
-    const animatedItem = useScroll();
+    const fadeInHeader = useScrollFadeIn();
+    const fadeLeftCard = useScrollFadeIn();
+    const fadeRightCard = useScrollFadeIn(0.1);
 
     return (
         <i.InfoSection>
             <i.InfoTitle>회사 소개</i.InfoTitle>
-            <i.InfoHeaderWrapper>
+            <i.InfoHeaderWrapper {...fadeInHeader}>
                 <i.InfoHeader>
                     직투는 누구나 쉽게 부동산에 투자하고<br/>
                     그 권리를 사고 팔 수 있는<br/>
@@ -27,7 +29,7 @@ export function CompanyInfo(){
                 </i.InfoHeader>
             </i.InfoHeaderWrapper>
             <i.InfoCardDiv>
-                <i.InfoCard >
+                <i.InfoCard {...fadeLeftCard}>
                     <i.InfoCardTitle>안심하세요</i.InfoCardTitle>
                     <i.InfoCardText>
                         고객님의 모든 소중한 자산은<br/>
@@ -41,7 +43,7 @@ export function CompanyInfo(){
                     </i.PartersLogo>
 
                 </i.InfoCard>
-                <i.InfoCardR>
+                <i.InfoCardR {...fadeRightCard}>
                     <i.InfoCardTitle>기대하세요</i.InfoCardTitle>
                     <i.InfoCardText>
                         빌딩 상장 시대를 만들어 나갈<br/>

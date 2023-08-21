@@ -1,8 +1,13 @@
 import React from 'react';
 import * as f from '../styles/FlatformStyle';
 import * as i from '../styles/InfoStyle';
+import { useScrollFadeIn } from '../hooks/useScrollFadeIn'
 
 function FlatformInfo() {
+    const fadeInHeader = useScrollFadeIn();
+    const fadeInCards = useScrollFadeIn();
+    const fadeInBottomCards = useScrollFadeIn(0.1);
+
     const card = [
         {
             no: 1,
@@ -21,7 +26,7 @@ function FlatformInfo() {
     return (
         <f.FlatformSection>
             <i.InfoTitle>플랫폼 소개</i.InfoTitle>
-            <i.InfoHeaderWrapper>
+            <i.InfoHeaderWrapper {...fadeInHeader}>
                 <i.InfoHeader>상업용 부동산 투자,</i.InfoHeader>
                 <i.InfoHeader>직투에서 누구나 쉽고 간편하게.</i.InfoHeader>
             </i.InfoHeaderWrapper>
@@ -40,10 +45,10 @@ function FlatformInfo() {
                 })}
 
                 <f.FlatformInfoCardB>
-                    <f.FlatformInfoCardText>건물 매각에 따른 투자수익까지</f.FlatformInfoCardText>
+                    <f.FlatformInfoCardText className='br-card-text'>건물 매각에 따른 투자수익까지</f.FlatformInfoCardText>
                 </f.FlatformInfoCardB>
                 <f.FlatformInfoCardBR>
-                    <f.FlatformInfoCardText>부동산 세금<br/>걱정없는 투자</f.FlatformInfoCardText>
+                    <f.FlatformInfoCardText className='br-card-text'>부동산 세금<br/>걱정없는 투자</f.FlatformInfoCardText>
                     <f.FlatformCardImgContainerBR>
                         <f.FlatformCardImgBR></f.FlatformCardImgBR>
                     </f.FlatformCardImgContainerBR>

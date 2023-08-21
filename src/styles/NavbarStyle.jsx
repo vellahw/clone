@@ -9,18 +9,41 @@ export const Navigation = styled.nav`
   display: flex;
   color: #fff;
 
+  .white-nav {
+    padding: 0 16px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #E8E8EC;
+    color: #171717;
+  }
+
+  .change {
+    background-color: #627AF5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 138px;
+    height: 40px;
+    padding: 20px;
+  }
+
   @media (max-width: 767px) {
     width: 100vw;
     max-width:100%;
     height: 56px;
     overflow-x: hidden;
-    border-bottom: 1px solid #E8E8EC;
  }
 `
 
 export const NavigationContainer = styled.div`
   padding: 0 16px;
-  
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
@@ -83,15 +106,15 @@ export const CategoryItem = styled.li`
 `
 
 export const AppDownloadBtn = styled.button`
-  background-color: #627AF5;
+  background-color: transparent;
   color: #fff;
   border: none;
-  /* border: 1px solid #fff; */
+  border: 1px solid #fff;
   border-radius: 4px;
   font-size: 16px;
   width: 138px;
   height: 40px;
-
+  
   @media (max-width: 767px) {
     border: none;
   }

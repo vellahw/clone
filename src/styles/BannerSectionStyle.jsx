@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
 export const MiddleBannerSection = styled.section`
-  background-color: #F6F6F9;
-
-  /* margin-top: 130px; */
-  /* margin-bottom: 20px; */
   height: 500px;
   overflow: hidden;
   text-align: center;
@@ -21,21 +17,17 @@ export const MiddleBannerSection = styled.section`
   }
 `
 export const MiddleBannerHeaderDiv = styled.div`
-  /* background-color: #E8E8EC; */
-
   position: absolute;
   top: 35%;
   left: 38%;
 `
 
 export const BannerHeader = styled.h1`
-  background-color: #E8E8EC;
-  color: #000;
   position: absolute;
   width: 100vw;
   top: 25%;
   
-  /* color: #fff; */
+  color: #fff;
   font-size: 54px;
   /* margin: 0; */
 
