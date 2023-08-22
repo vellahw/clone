@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {HeaderButton} from './TopBannerStyle';
+import {HeaderButton} from './BannerSectionStyle';
 
 
 export const InfoSection = styled.section`
@@ -17,6 +17,10 @@ export const InfoSection = styled.section`
     position: relative;
     height: 760px;
   }
+
+  @media (max-width: 1049px) {
+    margin: 0 16px;
+  }
 `
 
 export const InfoTitle = styled.h2`
@@ -27,12 +31,7 @@ export const InfoTitle = styled.h2`
 export const InfoHeaderWrapper = styled.div`
   margin: 38px 0 0 80px;
 
-  @media(max-width: 1024px) {
-    padding: 28px 0 0 80px;
-  }
-  
   @media(max-width: 767px) {
-    padding: 0;
     margin: 0;
     padding-top: 10px;
   }
@@ -78,7 +77,7 @@ export const InfoCard = styled.div`
 
   @media(max-width:767px){
     position: absolute;
-    width: calc(100% - 48px);
+    width: calc(100% - 64px);
     height: 180px;
   }
 `
@@ -118,9 +117,9 @@ export const InfoCardR = styled(InfoCard)`
   }
   
   @media(max-width:767px){
-    top: 252px;
+    top: 264px;
     left: 0;
-    width: calc(100% - 48px);
+    width: calc(100% - 64px);
     height: 236px;
   }
 `

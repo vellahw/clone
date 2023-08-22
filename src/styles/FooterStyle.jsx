@@ -71,20 +71,36 @@ export const Copyright = styled.p`
 export const SocialLogoDiv = styled.div`
     display: flex;
     position: absolute;
-    right: 0;
     top:53px;
+    right: 38px;
+
+    .sns-link {
+        margin: 0 12px 0 12px;
+    }
 
     .sns-logo {
         font-size: 32px;
         color: #373B41;
-        margin-right: 14px;
-        margin-left: 14px;
-        cursor: pointer;
+    }
+
+    .youtube {
+        font-size: 38px;
+        bottom: 4px;
+        position: absolute;
+    }
+
+    .blog {
+        width: 36px;
     }
 
     @media(max-width: 767px) {
+        right: 0;
         position: static;
         margin-top: 40px;
+
+        .youtube {
+            bottom: 320px;
+        }
     }
 `
 
@@ -92,6 +108,10 @@ export const ArticleDiv = styled.div`
     color: #414551;
     font-weight: 600;
     padding-top: 20px;
+
+    .service {
+        padding-right: 18px;
+    }
 
     .business-info{
         display: flex;

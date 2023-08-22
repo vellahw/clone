@@ -68,6 +68,10 @@ export const NewsItem = styled.li`
     margin-top: 6px;
     cursor: pointer;
     border-bottom: 1px solid #dadee3;
+
+    @media screen and (max-width: 767px) {
+        padding: 0;
+    }
 `
 
 export const NewsTitle = styled.h2`

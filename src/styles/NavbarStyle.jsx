@@ -6,7 +6,7 @@ export const NavSection = styled.nav`
     background-color: white;
     border-bottom: 1px solid #E8E8EC;
     color: #171717;
-    transition: 0.3s ease-out;
+    transition: background-color 0.2s linear 0s;
   }
 
   .color-btn {
@@ -28,7 +28,7 @@ export const Navigation = styled.div`
   z-index: 999;
   display: flex;
   color: #fff;
-  transition: 0.3s ease-out;
+  transition: background-color 0.2s linear 0s;
 
   @media (max-width: 767px) {
     width: 100vw;
@@ -93,7 +93,6 @@ export const CategoryList = styled.ul`
 `
 
 export const CategoryItem = styled.li`
-
   cursor: pointer;
   margin: 0 4px;
   padding: 12px;

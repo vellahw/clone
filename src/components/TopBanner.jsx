@@ -3,7 +3,7 @@ import cover1 from '../image/cover1.png';
 import cover2 from '../image/cover2.png';
 import cover3 from '../image/cover3.png';
 import cover4 from '../image/cover4.png';
-import * as c from '../styles/TopBannerStyle';
+import * as c from '../styles/BannerSectionStyle';
 import {Carousel} from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 

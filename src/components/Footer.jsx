@@ -41,10 +41,9 @@ function Footer() {
               개인정보 처리방침
             </a>
           </fo.ArticleDiv>
-          
           <fo.ArticleDiv>
-             <a href='https://static.kr.kasa.exchange/terms/service.html' target="_blank" rel="noreferrer">
-              서비스이용약관
+            <a className='service' href='https://static.kr.kasa.exchange/terms/service.html' target="_blank" rel="noreferrer">
+              서비스 이용약관
             </a>
           </fo.ArticleDiv>
 
@@ -66,17 +65,17 @@ function Footer() {
             </fo.Address>
 
             <fo.SocialLogoDiv>
-              <a href='https://www.facebook.com/bitstoa/' target='_blank' rel="noreferrer">
+              <a className='sns-link' href='https://www.facebook.com/bitstoa/' target='_blank' rel="noreferrer">
                 <BsFacebook className='sns-logo' />
               </a>
-              <a href='https://t.me/bitstoa_com' target='_blank' rel="noreferrer">
+              <a className='sns-link' href='https://t.me/bitstoa_com' target='_blank' rel="noreferrer">
                 <BsTelegram className='sns-logo'  />
               </a>
-              <a href='https://www.youtube.com/channel/UCQEnD0zSF3ui9Tle_EwRMBQ/about' target='_blank' rel="noreferrer">
-                <BsYoutube className='sns-logo' />
+              <a className='sns-link' href='https://blog.naver.com/hackersholdings' target='_blank' rel="noreferrer">
+                <img src={blog} className='sns-logo blog' alt='네이버 블로그 로고'></img>
               </a>
-              <a href='https://blog.naver.com/hackersholdings' target='_blank' rel="noreferrer">
-                <img src={blog} className='sns-logo' alt='네이버 블로그 로고'></img>
+              <a className='sns-link' href='https://www.youtube.com/channel/UCQEnD0zSF3ui9Tle_EwRMBQ/about' target='_blank' rel="noreferrer">
+                <BsYoutube className='sns-logo youtube' />
               </a>
             </fo.SocialLogoDiv>
             

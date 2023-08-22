@@ -19,7 +19,6 @@ const ButtonWrapper = styled.div`
         display: block;
         width: 100vw;
         max-width:100%;
-
         position: fixed;
         z-index: 999;
         bottom: 24px;
@@ -38,4 +37,5 @@ const Button = styled.button`
     font-size: 20px;
     font-weight: 600;
     color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 20px 0px;
 `

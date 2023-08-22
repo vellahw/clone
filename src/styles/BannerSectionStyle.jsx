@@ -1,5 +1,112 @@
 import styled from 'styled-components';
 
+// 최상단 배너
+export const TopBannerSection = styled.section`
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .slider {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .cover-img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  @media (max-width:767px) {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+`
+
+export const HeaderContainer = styled.div`
+  position: absolute;
+  left: 24%;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    left: 0;
+    position: absolute;
+  }
+`
+
+export const HeaderWrapper = styled.div`
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  @media (max-width: 767px) {
+    align-items: center;
+    text-align: center;
+  }
+`
+
+export const Header = styled.h1`
+
+  font-size: 54px;
+  margin: 0;
+
+  @media (max-width: 767px) {
+
+    font-size: 28px;
+  }
+`
+
+export const HeaderTextContainer = styled.div`
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 18px;
+
+  .text{
+    margin: 0;
+  }
+
+  @media (max-width: 767px) {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+`
+export const HeaderButton = styled.button`
+  background-color: #627AF5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 146px;
+  height: 48px;
+  margin-top: 28px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+`
+
+export const CoverImgContainer = styled.div`
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
+`
+
+// 중간 배너영역
 export const MiddleBannerSection = styled.section`
   height: 500px;
   overflow: hidden;
@@ -37,7 +144,8 @@ export const BannerHeader = styled.h1`
   }
 `
 
-export const BottomBannerSection = styled.section`
+// 마지막 배너
+export const BottomBannerSection = styled(TopBannerSection)`
   background-color: #627AF5;
   height: 540px;
 
@@ -46,7 +154,6 @@ export const BottomBannerSection = styled.section`
   }
   
 `
-
 export const BottomBannerContainer = styled.div`
   position: relative;
   max-width: 1300px;
@@ -61,7 +168,11 @@ export const BottomBannerContainer = styled.div`
 `
 
 export const ImgContainer = styled.div`
-  width: 100vw;
+  position: absolute;
+
+  .bg-img {
+    width: 100%;
+  }
 
   @media(max-width: 767px) {
     position: absolute;
@@ -69,19 +180,11 @@ export const ImgContainer = styled.div`
   }
 `  
 
-export const BottomBannerImg = styled.div`
-`
-
-export const BottomBannerHeaderDiv = styled.div`
-  padding-top: 136px;
-  width: 1024px;
-  margin: 0 auto;
+export const BottomHeaderContainer = styled(HeaderContainer)`
 
   @media(max-width: 767px) {
-    width: 100%;
-    text-align: center;
-    padding-top: 40px;
-    position: absolute;
+    padding-top: 136px;
+    justify-content: flex-start;
   }
 `
 
@@ -95,20 +198,19 @@ export const BottomBannerHeader = styled.h1`
   }
 `
 
-export const BottomBannerButton = styled.button`
-  border: none;
+export const InfoContainer = styled(HeaderTextContainer)`
+  margin-top: 0;
+
+  @media screen and (max-width: 767px) {
+    width: auto;
+  }
+`
+
+export const BottomBannerButton = styled(HeaderButton)`
   background-color: #fff;
   color: #627AF5;
-  font-size: 20px;
-  font-weight: 600;
   width: 200px;
-  height: 48px;
-  border-radius: 4px;
   margin-top: 32px;
-
-  @media(max-width: 767px) {
-    display: none;
-  }
 `
 
 export const BottomBannerInfo = styled.p`
