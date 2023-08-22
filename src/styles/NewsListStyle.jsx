@@ -64,8 +64,8 @@ export const NewsList = styled.ul`
 `
 
 export const NewsItem = styled.li`
-    /* padding-left: 40px; */
-    /* margin: 14px 0 40px 40px; */
+    padding: 28px 0 34px 0;
+    margin-top: 6px;
     cursor: pointer;
     border-bottom: 1px solid #dadee3;
 `
@@ -73,7 +73,8 @@ export const NewsItem = styled.li`
 export const NewsTitle = styled.h2`
     font-weight: normal;
     font-size: 26px;
-    margin: 40px 0 12px 0;
+    margin: 0 0 12px 0;
+    color: #171717;
 
     @media(max-width: 767px) {
         font-size: 16px;
@@ -83,7 +84,7 @@ export const NewsTitle = styled.h2`
 
 export const NewsInfo = styled.div`
     color: #626870;
-    padding: 0 0 34px 5px;
+    /* margin: 0 0 34px 5px; */
 
     @media(max-width: 767px) {
         padding: 0 0 24px 0;
@@ -93,7 +94,7 @@ export const NewsInfo = styled.div`
 
 export const NewsPress = styled.span`
     font-weight: 600;
-    color: #000;
+    color: #323232;
 `
 export const Line = styled.span`
     padding: 0 10px 0 10px;

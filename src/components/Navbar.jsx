@@ -1,4 +1,4 @@
-import {React, useEffect, useState, useRef} from 'react';
+import {React, useEffect, useState} from 'react';
 import headerLogo from '../image/logo/ziktu-logo.png';
 import headerLogoW from '../image/logo/ziktu-logo-w.png';
 import {AiOutlineMenu} from 'react-icons/ai';
@@ -6,15 +6,14 @@ import * as n from '../styles/NavbarStyle';
 
 function Navbar() {
     const [scrollPosition, setScrollPosition] = useState(0);
-    const targetRef = useRef(null);  
     const handleScroll = () => {
-        console.log("scrolling");
         setScrollPosition(window.scrollY || document.documentElement.scrollTop);
     }
 
     useEffect(() => {    
         const timer = setInterval(() => {
           window.addEventListener("scroll", handleScroll);
+          
         }, 100);
         return () => {
           clearInterval(timer);
@@ -22,10 +21,6 @@ function Navbar() {
         };
       }, []);
     
-    // useEffect(()=>{
-    //     window.addEventListener('scroll', handleScroll);
-    // });
-
     return (
         <n.NavSection>
         <n.Navigation className={scrollPosition < 100 ? "" : "white-nav"}>
