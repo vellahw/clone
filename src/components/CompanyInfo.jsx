@@ -6,13 +6,32 @@ import * as i from '../styles/InfoStyle';
 import { useScrollFadeIn } from '../hooks/useScrollFadeIn'
 
 export function CompanyInfo(){
-    // const logoLoop = (length) => {
-    //     const newArr = [];
-    //     for (let i = 1; i <= length; i++) {
-    //       newArr.push(<FaCircle className='partners'/>);
-    //     }
-    //     return newArr;
-    //   };
+    const logos = [
+        {
+            no: 1,
+            src: {Rectangle}
+        },
+        {
+            no: 2,
+            src: {Rectangle}
+        },
+        {
+            no: 3,
+            src: {Rectangle}
+        },
+        {
+            no: 4,
+            src: {Rectangle}
+        }
+    ]
+
+    const logoLoop = (length) => {
+        const newArr = [];
+        for (let i = 1; i <= length; i++) {
+          newArr.push(<img src={'/logo-partner-'+{i}+'.png'} className='partners' key={i}/>);
+        }
+        return newArr;
+      };
 
     const fadeInHeader = useScrollFadeIn();
     const fadeLeftCard = useScrollFadeIn();
@@ -37,10 +56,10 @@ export function CompanyInfo(){
                         안전하게 보관됩니다.
                     </i.InfoCardText>
 
-                    <i.PartersLogo>
+                    <i.PartersLogoContainer>
                         {/* { logoLoop(5) } */}
-                    <img src={logoPartner1} className='partner-logo' alt='파트너 로고1'></img>
-                    </i.PartersLogo>
+                        <img src={logoPartner1} className='partner-logo' alt='파트너 로고1'></img>
+                    </i.PartersLogoContainer>
 
                 </i.InfoCard>
                 <i.InfoCardR {...fadeRightCard}>
@@ -51,14 +70,14 @@ export function CompanyInfo(){
                         금융기관이 투자 하였습니다.<br/>
                     </i.InfoCardText>
 
-                    <i.PartersLogoR>
+                    {/* <i.PartersLogoR> */}
                         <img src={logoPartner2} className='partner-logo' alt='파트너 로고2'></img>
                         {/* { logoLoop(4) } */}
                         {/* <FaCircle className='partners b1' />
                         <img src={Rectangle} alt="가로로고" className='rec'/>
                         <FaCircle className='partners b2' />
                         <FaCircle className='partners b3' /> */}
-                    </i.PartersLogoR>
+                    {/* </i.PartersLogoR> */}
                 </i.InfoCardR>
             </i.InfoCardDiv>
         </i.InfoSection>

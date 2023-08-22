@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const NavSection = styled.nav`
+  min-width: 360px;
 
   .white-nav {
     background-color: white;
@@ -18,9 +19,18 @@ export const NavSection = styled.nav`
     width: 138px;
     height: 40px;
   }
+
+  @media screen and (max-width: 782px) {
+    transition: none;
+    
+    .white-nav {
+      transition: none;
+    }
+  }
 `
 
 export const Navigation = styled.div`
+  min-width: 360px;
   width: 100vw;
   height: 64px;
   align-items: center;
@@ -34,6 +44,10 @@ export const Navigation = styled.div`
     width: 100vw;
     max-width:100%;
  }
+
+  @media screen and (max-width: 782px) {
+    transition: none;
+  }
 `
 
 export const NavigationContainer = styled.div`
@@ -111,4 +125,40 @@ export const AppDownloadBtn = styled.button`
   @media (max-width: 767px) {
     border: none;
   }
+`
+
+// 오버레이
+export const Overlay = styled.div`
+  position: fixed;
+  inset: 0;
+  opacity: 0.4;
+  background-color: rgb(0, 0, 0);
+  z-index: 5;
+  
+  display: ${(props) => (!props.open ? 'block' : 'none')};
+  `
+
+// 사이드 메뉴바
+export const NavContainer = styled.div`
+  background-color: #fff;
+  width: 100%;
+  height: 304px;
+  padding-left: 16px;
+  z-index: 999;
+  position: fixed;
+  top: 65px;
+  display: none;
+
+  @media screen and (max-width: 782px){
+    display: ${(props) => (!props.open ? 'block' : 'none')};
+  }
+`
+
+export const MenuList = styled.ul`
+  padding: 0;
+`
+
+export const MenuItem = styled.li`
+  height: 48px;
+  width: 100%;
 `

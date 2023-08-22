@@ -5,6 +5,7 @@ export const TopBannerSection = styled.section`
   height: 100vh;
   position: relative;
   overflow: hidden;
+  min-width: 360px;
 
   .slider {
     height: 100vh;
@@ -133,6 +134,7 @@ export const BannerHeader = styled.h1`
   position: absolute;
   width: 100vw;
   top: 25%;
+  min-width: 360px;
   
   color: #fff;
   font-size: 54px;

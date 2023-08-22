@@ -68,7 +68,7 @@ export const InfoCard = styled.div`
   height: auto;
   padding: 32px;
   border-radius: 18px;
-
+  
   .partner-logo {
     width: 280px;
     float: right;
@@ -78,11 +78,21 @@ export const InfoCard = styled.div`
   @media(max-width:767px){
     position: absolute;
     width: calc(100% - 64px);
-    height: 180px;
+    height: auto;
+    padding: 24px;
+
+    .partner-logo {
+      float: none;
+    }
+  }
+
+  @media(max-width: 360px){
+    .partner-logo {
+    }
   }
 `
 
-export const PartersLogo = styled.div`
+export const PartersLogoContainer = styled.div`
   width: 100%;
   color: #fff;
 
@@ -113,7 +123,7 @@ export const InfoCardR = styled(InfoCard)`
 
   .partner-logo {
     width: 244px;
-    float: right;
+    /* float: right; */
   }
   
   @media(max-width:767px){
@@ -124,7 +134,7 @@ export const InfoCardR = styled(InfoCard)`
   }
 `
 
-export const PartersLogoR = styled(PartersLogo)`
+export const PartersLogoR = styled(PartersLogoContainer)`
   width: 304px;
   float: right;
 
