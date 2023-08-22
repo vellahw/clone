@@ -1,29 +1,15 @@
 import styled from 'styled-components';
 
-export const Navigation = styled.nav`
-  width: 100vw;
-  height: 64px;
-  align-items: center;
-  position: fixed;
-  z-index: 999;
-  display: flex;
-  color: #fff;
+export const NavSection = styled.nav`
 
   .white-nav {
-    padding: 0 16px;
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: white;
     border-bottom: 1px solid #E8E8EC;
     color: #171717;
+    transition: 0.3s ease-out;
   }
 
-  .change {
+  .color-btn {
     background-color: #627AF5;
     color: #fff;
     border: none;
@@ -31,8 +17,18 @@ export const Navigation = styled.nav`
     font-size: 16px;
     width: 138px;
     height: 40px;
-    padding: 20px;
   }
+`
+
+export const Navigation = styled.div`
+  width: 100vw;
+  height: 64px;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  color: #fff;
+  transition: 0.3s ease-out;
 
   @media (max-width: 767px) {
     width: 100vw;
@@ -52,7 +48,7 @@ export const NavigationContainer = styled.div`
 
   .header-logo {
     width: 80px;
-    padding: 17px;
+    padding: 10px;
     padding-left: 0;
 
     @media(min-width: 767px) {
@@ -99,8 +95,8 @@ export const CategoryList = styled.ul`
 export const CategoryItem = styled.li`
 
   cursor: pointer;
-  /* margin: 0 12px; */
-  padding: 20px;
+  margin: 0 4px;
+  padding: 12px;
 `
 
 export const AppDownloadBtn = styled.button`
