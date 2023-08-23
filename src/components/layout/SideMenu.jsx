@@ -1,4 +1,4 @@
-import * as n from '../styles/HeaderStyle';
+import * as n from '../../styles/HeaderStyle';
 
 function SideMenu(props) {
     return(

@@ -1,9 +1,9 @@
-import logoPartner1 from '../image/logo/logo-partner1.png';
-import logoPartner2 from '../image/logo/logo-partner2.png';
-import Rectangle from '../image/logo/Rectangle.svg';
+import logoPartner1 from '../../../image/logo/logo-partner1.png';
+import logoPartner2 from '../../../image/logo/logo-partner2.png';
+import Rectangle from '../../../image/logo/Rectangle.svg';
 import {FaCircle} from 'react-icons/fa';
-import * as i from '../styles/InfoStyle';
-import { useScrollFadeIn } from '../hooks/useScrollFadeIn'
+import * as i from '../../../styles/InfoStyle';
+import { useScrollFadeIn } from '../../../hooks/useScrollFadeIn'
 
 export function CompanyInfo(){
     const logos = [

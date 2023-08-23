@@ -1,7 +1,7 @@
 import React from 'react';
-import * as f from '../styles/FlatformStyle';
-import * as i from '../styles/InfoStyle';
-import { useScrollFadeIn } from '../hooks/useScrollFadeIn'
+import * as f from '../../../styles/FlatformStyle';
+import * as i from '../../../styles/InfoStyle';
+import { useScrollFadeIn } from '../../../hooks/useScrollFadeIn'
 
 function FlatformInfo() {
     const fadeInHeader = useScrollFadeIn();

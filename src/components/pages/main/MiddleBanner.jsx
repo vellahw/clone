@@ -1,6 +1,6 @@
 import React from 'react';
-import banner from '../image/banner.jpg';
-import * as b from '../styles/BannerSectionStyle';
+import banner from '../../../image/banner.jpg';
+import * as b from '../../../styles/BannerSectionStyle';
 
 function MiddleBanner(){
     return (

@@ -1,11 +1,11 @@
-import iso from '../image/logo/iso-27001.svg';
-import sw from '../image/logo/logo-sw.svg';
-import isms from '../image/logo/logo-isms.svg';
-import blog from '../image/logo/logo-naverblog.svg';
+import iso from '../../image/logo/iso-27001.svg';
+import sw from '../../image/logo/logo-sw.svg';
+import isms from '../../image/logo/logo-isms.svg';
+import blog from '../../image/logo/logo-naverblog.svg';
 import {BsFacebook} from 'react-icons/bs';
 import {BsYoutube} from 'react-icons/bs';
 import {BsTelegram} from 'react-icons/bs';
-import * as fo from '../styles/FooterStyle';
+import * as fo from '../../styles/FooterStyle';
 
 function Footer() {
     return (
@@ -65,7 +65,7 @@ function Footer() {
             </fo.Address>
 
             <fo.SocialLogoDiv>
-              <a className='sns-link' href='https://www.facebook.com/bitstoa/' target='_blank' rel="noreferrer">
+              <a className='sns-link fb' href='https://www.facebook.com/bitstoa/' target='_blank' rel="noreferrer">
                 <BsFacebook className='sns-logo' />
               </a>
               <a className='sns-link' href='https://t.me/bitstoa_com' target='_blank' rel="noreferrer">

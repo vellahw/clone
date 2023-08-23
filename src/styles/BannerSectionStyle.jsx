@@ -6,6 +6,22 @@ export const TopBannerSection = styled.section`
   position: relative;
   overflow: hidden;
   min-width: 360px;
+  display: flex;
+  justify-content: center;
+
+  .section-container {
+    padding-left: 16px;
+    position: absolute;
+    display: flex;
+    min-width: 1024px;
+    height: 100vh;
+    width: 100%;
+    max-width: 1024px;
+  }
+
+  .b {
+    height: 100%;
+  }
 
   .slider {
     height: 100vh;
@@ -31,7 +47,6 @@ export const TopBannerSection = styled.section`
 
 export const HeaderContainer = styled.div`
   position: absolute;
-  left: 24%;
   max-width: 1024px;
   margin: 0 auto;
   height: 100%;
@@ -92,7 +107,7 @@ export const HeaderButton = styled.button`
   border-radius: 4px;
   font-size: 20px;
   font-weight: 600;
-  width: 146px;
+  width: 168px;
   height: 48px;
   margin-top: 28px;
 

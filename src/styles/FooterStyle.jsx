@@ -83,6 +83,10 @@ export const SocialLogoDiv = styled.div`
         color: #373B41;
     }
 
+    .fb {
+        margin-left: 0;
+    }
+
     .youtube {
         font-size: 38px;
         bottom: 4px;
