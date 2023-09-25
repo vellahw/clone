@@ -1,8 +1,8 @@
-import {React, useEffect} from 'react';
+import {React, useEffect, useState} from 'react';
 import { useRecoilState } from 'recoil';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { AiOutlineClose } from 'react-icons/ai';
-import { whiteNav, navOpen, isScroll } from "../recoil/atom";
+import { whiteNav, navOpen } from "../recoil/atom";
 import SideMenu from '../components/ui/SideMenu';
 import { NavbarMenu } from '../components/ui/NavbarMenu';
 import * as n from '../styles/HeaderStyle';
@@ -10,8 +10,7 @@ import * as n from '../styles/HeaderStyle';
 function Navbar() {
   const [isWhiteNav] = useRecoilState(whiteNav);
   const [isNavOpen, setIsNavOpen] = useRecoilState(navOpen);
-  const [scrollPosition, setScrollPosition] = useRecoilState(isScroll);
-  const isWhite = isWhiteNav;
+  const [scrollPosition, setScrollPosition] = useState(0);
   const sideMenuOpen = isNavOpen;
 
   const openMenu = () => {
@@ -28,6 +27,10 @@ function Navbar() {
       ||
       document.documentElement.scrollTop
     );
+  }
+
+  const openQr = () => {
+    alert("QR");
   }
   
   useEffect(() => { 
@@ -54,7 +57,7 @@ function Navbar() {
         className={
           scrollPosition < 100
           && !sideMenuOpen
-          && isWhite === 0
+          && isWhiteNav
           ? ""
           : "white-nav" }
       >
@@ -64,7 +67,7 @@ function Navbar() {
               src={
                 scrollPosition < 100
                 && !sideMenuOpen
-                && isWhite === 0
+                && isWhiteNav
                 ? '/logos/logo-white.png'
                 : '/logos/logo.png'
                 }
@@ -87,10 +90,24 @@ function Navbar() {
     
           <n.CategoryWrapper>
             <n.CategoryList>
+              {/* 메뉴 */}
               <NavbarMenu />
+
+              {/* 버튼 */}
+              <n.CategoryItem> 
+                <n.AppDownloadBtn
+                  className={
+                    scrollPosition < 100 && isWhiteNav
+                    ? ""
+                    : "color-btn"
+                   }
+                  onClick={openQr}
+                >
+                  카사 앱 다운로드
+                </n.AppDownloadBtn>
+              </n.CategoryItem>
             </n.CategoryList>
           </n.CategoryWrapper>
-
         </n.NavigationContainer>
     </n.Navigation>
     </n.NavSection>

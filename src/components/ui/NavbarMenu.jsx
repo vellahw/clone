@@ -1,24 +1,19 @@
-import {React, useState} from 'react';
+import { React } from 'react';
 import { NavLink } from "react-router-dom";
 import { useRecoilState } from 'recoil';
-import { whiteNav, navOpen, isScroll } from "../../recoil/atom";
+import { whiteNav, navOpen } from "../../recoil/atom";
 import * as n from '../../styles/HeaderStyle';
 import data from '../../data.json'
 
 export function NavbarMenu() {
   const menuItems = data.menuItems;
-  const [scrollPosition] = useRecoilState(isScroll);
   const [isWhiteNav, setIsWhiteNav] = useRecoilState(whiteNav);
   const [isNavOpen, setIsNavOpen] = useRecoilState(navOpen);
-  const [isClick, setIsClick] = useState(false);
-  const isWhite = isWhiteNav;
-
-  const openQr = () => {
-    alert("QR");
-  }
+  // const [isClick, setIsClick] = useState(false);
+  // const isWhite = isWhiteNav;
 
   const handleItemClick = () => {
-    setIsClick(true);
+    // setIsClick(true);
     setIsWhiteNav(1);
     setIsNavOpen(false);
   };
@@ -26,32 +21,19 @@ export function NavbarMenu() {
   return (
     <>
       { menuItems.map(i=>{
-          return (
-            <n.CategoryDiv>
-              <NavLink
-                key={i.no}
-                to={i.path}
-                onClick={() => handleItemClick()}
-              >
-                <n.CategoryItem className='item'>
-                  {i.title}
-                </n.CategoryItem>
-              </NavLink>
-            </n.CategoryDiv>
-          )
+        return (
+          <n.CategoryDiv key={i.no}>
+            <NavLink
+              to={i.path}
+              onClick={() => handleItemClick()}
+            >
+              <n.CategoryItem className='item'>
+                {i.title}
+              </n.CategoryItem>
+            </NavLink>
+          </n.CategoryDiv>
+        )
       })}
-
-      <n.CategoryItem> 
-        <n.AppDownloadBtn
-          className={
-            scrollPosition < 100 && isWhite === 0
-            ? ""
-            : "color-btn"
-          }
-          onClick={openQr}>
-          카사 앱 다운로드
-        </n.AppDownloadBtn>
-      </n.CategoryItem>
     </>
   )
 }
