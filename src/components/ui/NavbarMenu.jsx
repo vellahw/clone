@@ -1,5 +1,5 @@
 import {React, useState} from 'react';
-import { useNavigate, NavLink, useLocation} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useRecoilState } from 'recoil';
 import { whiteNav, navOpen, isScroll } from "../../recoil/atom";
 import * as n from '../../styles/HeaderStyle';
@@ -7,7 +7,7 @@ import data from '../../data.json'
 
 export function NavbarMenu() {
   const menuItems = data.menuItems;
-  const [scrollPosition, setScrollPosition] = useRecoilState(isScroll);
+  const [scrollPosition] = useRecoilState(isScroll);
   const [isWhiteNav, setIsWhiteNav] = useRecoilState(whiteNav);
   const [isNavOpen, setIsNavOpen] = useRecoilState(navOpen);
   const [isClick, setIsClick] = useState(false);
@@ -26,19 +26,19 @@ export function NavbarMenu() {
   return (
     <>
       { menuItems.map(i=>{
-        return (
-        <n.CategoryDiv>
-          <NavLink
-            key={i.no}
-            to={i.path} 
-            onClick={() => handleItemClick(i.item)}
-          >
-            <n.CategoryItem className='item'>
-              {i.title}
-            </n.CategoryItem>
-        </NavLink>
-        </n.CategoryDiv>
-        )
+          return (
+            <n.CategoryDiv>
+              <NavLink
+                key={i.no}
+                to={i.path}
+                onClick={() => handleItemClick()}
+              >
+                <n.CategoryItem className='item'>
+                  {i.title}
+                </n.CategoryItem>
+              </NavLink>
+            </n.CategoryDiv>
+          )
       })}
 
       <n.CategoryItem> 
