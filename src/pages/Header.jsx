@@ -34,6 +34,7 @@ function Navbar() {
     alert("QR");
   }
   
+  
   useEffect(() => { 
     window.removeEventListener("scroll", handleScroll);
     const timer = setInterval(() => {

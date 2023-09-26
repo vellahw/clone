@@ -65,10 +65,7 @@ export const NavigationContainer = styled.div`
     width: 80px;
     padding: 10px;
     padding-left: 0;
-    
-    @media(max-width: 767px) {
-      display: flex;
-    }
+    display: flex;
   }
 
   @media(max-width: 767px) {

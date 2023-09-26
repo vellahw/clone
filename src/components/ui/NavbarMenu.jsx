@@ -9,11 +9,8 @@ export function NavbarMenu() {
   const menuItems = data.menuItems;
   const [isWhiteNav, setIsWhiteNav] = useRecoilState(whiteNav);
   const [isNavOpen, setIsNavOpen] = useRecoilState(navOpen);
-  // const [isClick, setIsClick] = useState(false);
-  // const isWhite = isWhiteNav;
 
   const handleItemClick = () => {
-    // setIsClick(true);
     setIsWhiteNav(1);
     setIsNavOpen(false);
   };
