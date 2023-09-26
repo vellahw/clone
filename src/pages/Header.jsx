@@ -11,7 +11,8 @@ function Navbar() {
   const [isWhiteNav] = useRecoilState(whiteNav);
   const [isNavOpen, setIsNavOpen] = useRecoilState(navOpen);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const sideMenuOpen = isNavOpen;
+  const isWhite = isWhiteNav === 1;
+  const isSideNavOpen = isNavOpen === true;
 
   const openMenu = () => {
     setIsNavOpen(true);
@@ -49,15 +50,15 @@ function Navbar() {
   return (
     <n.NavSection>
       <SideMenu
-        sideMenuOpen={sideMenuOpen ? 0 : 1}
+        sideMenuOpen={isNavOpen ? 0 : 1}
         setIsNavOpen={setIsNavOpen}
       />
 
       <n.Navigation
         className={
           scrollPosition < 100
-          && !sideMenuOpen
-          && isWhiteNav
+          && !isWhite
+          && !isSideNavOpen
           ? ""
           : "white-nav" }
       >
@@ -66,8 +67,8 @@ function Navbar() {
             <img
               src={
                 scrollPosition < 100
-                && !sideMenuOpen
-                && isWhiteNav
+                && !isWhite
+                && !isSideNavOpen
                 ? '/logos/logo-white.png'
                 : '/logos/logo.png'
                 }
@@ -77,7 +78,7 @@ function Navbar() {
           </a>
           
           <n.HamburgerWrapper>
-            { sideMenuOpen ? 
+            { isNavOpen ? 
               <AiOutlineClose
                 onClick={closeMenu}
                 className='hamburger-menu'/>
@@ -97,7 +98,8 @@ function Navbar() {
               <n.CategoryItem> 
                 <n.AppDownloadBtn
                   className={
-                    scrollPosition < 100 && isWhiteNav
+                    scrollPosition < 100 
+                    && !isWhite
                     ? ""
                     : "color-btn"
                    }
