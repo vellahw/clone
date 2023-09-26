@@ -65,15 +65,16 @@ export const NavigationContainer = styled.div`
     width: 80px;
     padding: 10px;
     padding-left: 0;
-
-    @media(min-width: 767px) {
-      margin-top: 4px;
+    
+    @media(max-width: 767px) {
+      display: flex;
     }
   }
 
-  @media(min-width: 767px) {
+  @media(max-width: 767px) {
     .hamburger-menu {
       font-size: 20px;
+      display: flex;
     }
   }
 `
@@ -91,6 +92,12 @@ export const CategoryWrapper = styled.div`
   @media (max-width: 782px) {
     display: none;
   }
+`
+
+export const CategoryDiv = styled.div`
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 0 10px;
 `
 
 export const CategoryList = styled.ul`
@@ -111,14 +118,12 @@ export const CategoryList = styled.ul`
   }
 `
 
-export const CategoryDiv = styled.div`
-  cursor: pointer;
-  margin: 0 5px;
-  padding: 0 10px;
-`
-
 export const CategoryItem = styled.li`
   font-weight: 500;
+
+  @media (max-width: 767px) {
+    line-height: 48px;
+  }
 `
 
 export const AppDownloadBtn = styled.button`
@@ -139,7 +144,6 @@ export const AppDownloadBtn = styled.button`
   @media (max-width: 767px) {
     border: none;
   }
-
 `
 
 // 오버레이
@@ -153,16 +157,20 @@ export const Overlay = styled.div`
   display: ${(props) => (!props.open ? 'block' : 'none')};
   `
 
-// 사이드 메뉴바
+// 모바일 사이드 메뉴바
 export const NavContainer = styled.div`
   background-color: #fff;
   width: 100%;
-  height: 304px;
+  height: 325px;
   padding-left: 16px;
   z-index: 999;
   position: fixed;
   top: 57px;
   display: none;
+
+  @media screen and (max-width: 767px){
+    padding-left: 0;
+  }
 
   @media screen and (max-width: 782px){
     display: ${(props) => (!props.open ? 'block' : 'none')};

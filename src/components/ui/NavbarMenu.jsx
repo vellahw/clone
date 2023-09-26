@@ -27,7 +27,7 @@ export function NavbarMenu() {
               to={i.path}
               onClick={() => handleItemClick()}
             >
-              <n.CategoryItem className='item'>
+              <n.CategoryItem>
                 {i.title}
               </n.CategoryItem>
             </NavLink>

@@ -63,7 +63,7 @@ function Navbar() {
           : "white-nav" }
       >
         <n.NavigationContainer>
-          <a href='/' rel="noreferrer">
+          <a href='/' rel="noreferrer" className='logo'>
             <img
               src={
                 scrollPosition < 100
