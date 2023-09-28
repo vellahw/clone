@@ -40,13 +40,10 @@ export const Navigation = styled.div`
   color: #fff;
   transition: background-color 0.2s linear 0s;
 
-  @media (max-width: 767px) {
+  @media screen and (max-width: 782px) {
     width: 100vw;
     max-width:100%;
     height: 56px;
- }
-
-  @media screen and (max-width: 782px) {
     transition: none;
   }
 `
@@ -68,7 +65,7 @@ export const NavigationContainer = styled.div`
     display: flex;
   }
 
-  @media(max-width: 767px) {
+  @media(max-width: 782px) {
     .hamburger-menu {
       font-size: 20px;
       display: flex;
@@ -118,7 +115,7 @@ export const CategoryList = styled.ul`
 export const CategoryItem = styled.li`
   font-weight: 500;
 
-  @media (max-width: 767px) {
+  @media (max-width: 782px) {
     line-height: 48px;
   }
 `
@@ -136,10 +133,7 @@ export const AppDownloadBtn = styled.button`
   
   @media (max-width: 782px) {
       display: none;
-  }
-  
-  @media (max-width: 767px) {
-    border: none;
+      border: none;
   }
 `
 
@@ -165,11 +159,8 @@ export const NavContainer = styled.div`
   top: 57px;
   display: none;
 
-  @media screen and (max-width: 767px){
-    padding-left: 0;
-  }
-
   @media screen and (max-width: 782px){
+    padding-left: 0;
     display: ${(props) => (!props.open ? 'block' : 'none')};
   }
 `
